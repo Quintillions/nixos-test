@@ -1,1 +1,1 @@
-# nixos-test
+# KILL YOURSELF
