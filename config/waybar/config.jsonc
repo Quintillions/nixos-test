@@ -1,0 +1,110 @@
+{
+  "margin-top": 5,
+  "margin-left": 10,
+  "margin-right": 10,
+  "height":21,
+  "modules-left": [
+    "clock"
+  ],
+  "modules-center": [
+    "niri/workspaces",
+  ],
+  "modules-right": [
+    "memory",
+    "cpu",
+    "temperature",
+    "disk",
+    "battery",
+    "custom/drun",
+    "custom/powermenu",
+    "pulseaudio",
+    "pulseaudio/slider"
+  ],
+  "separator": {
+    "format": " | "
+  },
+  "niri/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "active": " 󱗜 "
+    },
+    "sort-by-number": true,
+    "persistent-workspaces": {
+      "*": 8, // 5 workspaces by default on every monitor
+      "HDMI-A-1": 5 // but only three on HDMI-A-1
+    }
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}"
+  },
+  "cpu": {
+    "format": " {usage}%",
+    "internal": 5,
+    "tooltip": false
+  },
+  "memory": {
+    "format": " {percentage}%",
+    "interval": 10
+  },
+  "temperature": {
+    // "thermal-zone": 2,
+    "hwmon-path": "/sys/class/hwmon/hwmon4/temp4_input",
+    "critical-threshold": 80,
+    "format": "{icon}{temperatureC}°C",
+    "format-icons": [
+      "󰎓 "
+    ]
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 20 
+    },
+    "format": "{icon}{capacity}%",
+    "format-full": "{icon}{capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ],
+    "interval": 5
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "rotate": 0,
+    "tooltip-format": "{icon} {desc} // {volume}%",
+    "scroll-step": 5,
+    "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+      "default": ["","", ""]
+    }
+  },
+  "pulseaudio/slider": {
+    "min": 5,
+    "max": 100,
+    "rotate": 0,
+    "device": "pulseaudio",
+    "scroll-step": 1
+  },
+  "disk": {
+    "interval": 60,
+    "format": " {percentage_used}%",
+    "path": "/"
+  },
+  "custom/drun":{
+    "format": " ",
+    "on-click": "bash ~/.dotfiles/scripts/drun.sh"
+  },
+  "custom/powermenu":{
+    "format": "⏼ ",
+    "on-click": "~/.dotfiles/applications/rofi/powermenu.sh"
+  },
+}
