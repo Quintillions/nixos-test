@@ -13,7 +13,7 @@
     programs.bash = {
         enable = true;
         shellAliases = {
-            wtf = "what the fish";
+            wtf = "$echo "what the fish" ";
         };
     };
     home.packages = [
