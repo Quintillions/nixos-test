@@ -54,7 +54,6 @@
             nautilus
             
             alacritty
-            kitty
             waybar
             niri
             brightnessctl

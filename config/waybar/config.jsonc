@@ -7,7 +7,7 @@
     "clock"
   ],
   "modules-center": [
-    "niri/workspaces",
+    "niri/workspaces"
   ],
   "modules-right": [
     "memory",
@@ -19,7 +19,7 @@
     "pulseaudio",
     "pulseaudio/slider",
     "backlight",
-    "backlight/slider",
+    "backlight/slider"
   ],
   "separator": {
     "format": " | "
@@ -119,6 +119,6 @@
   },
   "custom/powermenu":{
     "format": "⏼ ",
-    "on-click": "~/.dotfiles/applications/rofi/powermenu.sh"
-  },
+    "on-click": "~/.config/rofi/powermenu.sh"
+  }
 }
