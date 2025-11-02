@@ -414,8 +414,8 @@ binds {
     XF86MonBrightnessDown       allow-when-locked=true { spawn "brightnessctl" "s" "5%-"; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+Enter hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+D hotkey-overlay-title="Run an Application: rofi launcher"{spawn "rofi" "-show" "drun" "-config" "/home/mrkrebs/.config/rofi-themes/config.rasi"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    Mod+D hotkey-overlay-title="Run an Application: rofi launcher"{spawn "rofi" "-show" "drun" "-config" "/home/quin/.config/rofi-themes/config.rasi"; }
     Mod+P hotkey-overlay-title="Open a powermenu: rofi powermenu"{spawn "~/.dotfiles/applications/rofi/powermenu.sh"; }
     Mod+Q hotkey-overlay-title="Open an Application: firefox browser"{spawn "firefox";}
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock -c ~/.config/hyprlock/hyprlock.config"; }
