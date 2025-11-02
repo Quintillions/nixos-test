@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 {
-    home.file.".config/niri/config.kdl".source = ./config/niri/config.kdl;
+    xdg.configFile."niri/config.kdl".source = ./config/niri/config.kdl;
     home.file.".config/waybar".source = ./config/waybar;
     home.file.".config/rofi".source = ./config/rofi;
 
