@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 {
-    # home.file.".config/niri".source = ./config/niri;
+    home.file.".config/niri".source = ./config/niri;
     home.file.".config/waybar".source = ./config/waybar;
     home.file.".config/rofi".source = ./config/rofi;
 

@@ -664,14 +664,9 @@ binds {
 // Spawing programs at startup
 
 // this line is not really neccesary every time but since swww have a cache and will check its cache for similarity before processing, it doesn't really matter 
-spawn-at-startup "swww" "img" "/home/mrkrebs/.background-image" "--transition-type" "simple" "--transition-step" "255" "--transition-fps" "255" "--resize" "crop"
 
-spawn-at-startup "waybar" "kitty"
+spawn-at-startup "waybar" "kitty" "firefox"
 
 // this is neccesary because swww takes some time to render the wallpaper so display a static pictures of the wallpaper while swww generated the wallpaper
 // feel free to change the sleep duration in the script if you have a beefier device
-spawn-at-startup "bash" "/home/mrkrebs/.dotfiles/scripts/wallpaper.sh"
-
-spawn-at-startup "swaybg" "-m" "fill" "-i" "/home/mrkrebs/.overview-background-image" 
-spawn-at-startup "squeekboard"
 prefer-no-csd
