@@ -7,7 +7,7 @@
     "clock"
   ],
   "modules-center": [
-    "niri/workspaces",
+    "niri/workspaces"
   ],
   "modules-right": [
     "memory",
