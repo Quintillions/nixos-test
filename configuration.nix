@@ -37,15 +37,11 @@
     environment.systemPackages = with pkgs; [
         vim
         wget
-        kitty
         kdePackages.kate
-        waybar
         git
        	light
         curl
-        niri
         zip
-        brightnessctl
         unzip
         bluez
         p7zip
@@ -56,17 +52,23 @@
         gcc
         plymouth
         parted
-        xwayland-satellite
-        xbindkeys
-        xdg-utils
-        xbindkeys-config
         nnn
         pcmanfm
         nautilus
+        
+        alacritty
+        kitty
+        waybar
+        niri
+        brightnessctl
         wayland-protocols
         libxkbcommon
+        xwayland-satellite
+        xwayland
+        xbindkeys
+        xdg-utils
     ];
-    
+
     nix.settings.experimental-features =  ["nix-command" "flakes" ];
 	services.flatpak.enable = true;
 	
