@@ -1,10 +1,10 @@
 { config, lib, pkgs, ... }:
 {
     xdg.configFile."niri/config.kdl".source = ./config/niri/config.kdl;
-    home.file.".config/waybar".source = ./config/waybar;
+    # home.file.".config/waybar".source = ./config/waybar;
     home.file.".config/rofi".source = ./config/rofi;
     xdg.configFile."niri/config.kdl".force = true;
-    programs.waybar.enable = true;
+    # programs.waybar.enable = true;
     
     home.packages = [ 
         pkgs.xwayland-satellite 
@@ -18,4 +18,5 @@
         pkgs.rofi
         pkgs.fuzzel
     ];
+
 }
