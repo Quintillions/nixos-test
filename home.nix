@@ -4,7 +4,7 @@
     imports = [ 
         ./chatnwhatnot.nix # This imports the chat and whatnot packages
         ./niri.nix # This imports the chat and whatnot packages
-	./kitty.nix
+	    ./kitty.nix
     ];
 
     home.username = "quin";
@@ -13,7 +13,7 @@
     programs.bash = {
         enable = true;
         shellAliases = {
-            wtf = "I HATE NIXXERS";
+            wtf = "what the fish";
         };
     };
     home.packages = [

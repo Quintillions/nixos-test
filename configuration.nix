@@ -19,30 +19,8 @@
 
     services.getty.autologinUser = "quin";
 
-#	services.displayManager.defaultSession = "niri";
-#	environment.sessionVariables = {
-#		XDG_SESSION_TYPE = "wayland";
-#		XDG_CURRENT_DESKTOP = "KDE";
-#		XDG_SESSION_DESKTOP = "niri";
-#		WAYLAND_DISPLAY = "wayland-0";
-#	};
-
 	programs.fish.enable = true;    
     programs.niri.enable = true;
-    
-    xdg.portal = {
-        enable = true;
-        extraPortals = [pkgs.xdg-desktop-portal-gtk];
-        config = {
-            common = {
-                default = ["gtk"];
-            };
-        };
-    };
-
-
-
-
 
     users.users.quin = {
         isNormalUser = true;
@@ -88,6 +66,7 @@
         wayland-protocols
         libxkbcommon
     ];
+    
     nix.settings.experimental-features =  ["nix-command" "flakes" ];
 	services.flatpak.enable = true;
 	
