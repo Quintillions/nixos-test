@@ -19,6 +19,7 @@
 
     services.getty.autologinUser = "quin";
 
+    # niri
 	programs.fish.enable = true;    
     programs.niri.enable = true;
 
