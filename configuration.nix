@@ -23,7 +23,13 @@
 	programs.fish.enable = true;
 
     programs.niri.enable = true;
+    porgrams.xwayland.enable = true;
+
     environment = {
+        sessionVariables = {
+            XDG_SESSION_TYPE = "wayland";
+            XDG_SESSION_DESKTOP = "niri";
+        };
         systemPackages = with pkgs; [
             xwayland-satellite
         ];
