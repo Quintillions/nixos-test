@@ -26,15 +26,29 @@
 #		XDG_SESSION_DESKTOP = "niri";
 #		WAYLAND_DISPLAY = "wayland-0";
 #	};
+
 	programs.fish.enable = true;    
     programs.niri.enable = true;
-	services.xserver.enable = true;
-	programs.xwayland.enable = true;
+    
+    xdg.portal = {
+        enable = true;
+        extraPortals = [pkgs.xdg-desktop-portal-gtk];
+        config = {
+            common = {
+                default = ["gtk"];
+            };
+        };
+    };
+
+
+
+
+
     users.users.quin = {
         isNormalUser = true;
         extraGroups = [ "wheel" ];
         packages = with pkgs; [
-        tree
+            tree
         ];
     };
 
@@ -50,29 +64,29 @@
         waybar
         git
        	light
-	curl
-	niri
-	zip
-	brightnessctl
-	unzip
-	bluez
-	p7zip
-	unrar
-	rar
-	gnutar
-	iproute2
-	gcc
-	plymouth
-	parted
-	xwayland-satellite
-	xbindkeys
-	xdg-utils
-	xbindkeys-config
-	nnn
-	pcmanfm
-	nautilus
-	wayland-protocols
-	libxkbcommon
+        curl
+        niri
+        zip
+        brightnessctl
+        unzip
+        bluez
+        p7zip
+        unrar
+        rar
+        gnutar
+        iproute2
+        gcc
+        plymouth
+        parted
+        xwayland-satellite
+        xbindkeys
+        xdg-utils
+        xbindkeys-config
+        nnn
+        pcmanfm
+        nautilus
+        wayland-protocols
+        libxkbcommon
     ];
     nix.settings.experimental-features =  ["nix-command" "flakes" ];
 	services.flatpak.enable = true;

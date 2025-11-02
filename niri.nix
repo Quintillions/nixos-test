@@ -11,6 +11,9 @@
         pkgs.xwayland-run 
         pkgs.cage
         pkgs.squeekboard 
-        pkgs.brightnessctl 
-        ];
+        pkgs.brightnessctl
+        pkgs.swaybg
+        pkgs.swaylock
+        pkgs.wl-clipboard 
+    ];
 }
