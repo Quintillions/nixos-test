@@ -7,7 +7,7 @@
     "clock"
   ],
   "modules-center": [
-    "niri/workspaces"
+    "niri/workspaces",
   ],
   "modules-right": [
     "memory",
@@ -15,13 +15,21 @@
     "temperature",
     "disk",
     "battery",
-    "custom/drun",
     "custom/powermenu",
     "pulseaudio",
-    "pulseaudio/slider"
+    "pulseaudio/slider",
+    "backlight",
+    "backlight/slider",
   ],
   "separator": {
     "format": " | "
+  },
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10,
+    "icons": {
+
+    }
   },
   "niri/workspaces": {
     "format": "{icon}",
@@ -94,14 +102,20 @@
     "device": "pulseaudio",
     "scroll-step": 1
   },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon}",
+    "format-icons": ["󰃞", "󰃟","󰃠"]
+  },
+  "backlight/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+  },
   "disk": {
     "interval": 60,
     "format": " {percentage_used}%",
     "path": "/"
-  },
-  "custom/drun":{
-    "format": " ",
-    "on-click": "bash ~/.dotfiles/scripts/drun.sh"
   },
   "custom/powermenu":{
     "format": "⏼ ",
