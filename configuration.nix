@@ -23,7 +23,7 @@
 	programs.fish.enable = true;
 
     programs.niri.enable = true;
-    porgrams.xwayland.enable = true;
+    programs.xwayland.enable = true;
 
     environment = {
         sessionVariables = {
