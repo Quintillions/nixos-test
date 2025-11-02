@@ -20,9 +20,15 @@
     services.getty.autologinUser = "quin";
 
     # niri
-	programs.fish.enable = true;    
-    programs.niri.enable = true;
+	programs.fish.enable = true;
 
+    programs.niri.enable = true;
+    environment = {
+        systemPackages = with pkgs; [
+            xwayland-satellite
+        ];
+    };
+    
     users.users.quin = {
         isNormalUser = true;
         extraGroups = [ "wheel" ];
