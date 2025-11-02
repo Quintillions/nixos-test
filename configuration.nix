@@ -30,8 +30,40 @@
             XDG_SESSION_TYPE = "wayland";
             XDG_SESSION_DESKTOP = "niri";
         };
+
         systemPackages = with pkgs; [
+            vim
+            wget
+            kdePackages.kate
+            git
+            light
+            curl
+            zip
+            unzip
+            bluez
+            p7zip
+            unrar
+            rar
+            gnutar
+            iproute2
+            gcc
+            plymouth
+            parted
+            nnn
+            pcmanfm
+            nautilus
+            
+            alacritty
+            kitty
+            waybar
+            niri
+            brightnessctl
+            wayland-protocols
+            libxkbcommon
             xwayland-satellite
+            xwayland
+            xbindkeys
+            xdg-utils
         ];
     };
     
@@ -47,40 +79,6 @@
  
 	nixpkgs.config.allowUnfree = true;
 
-    environment.systemPackages = with pkgs; [
-        vim
-        wget
-        kdePackages.kate
-        git
-       	light
-        curl
-        zip
-        unzip
-        bluez
-        p7zip
-        unrar
-        rar
-        gnutar
-        iproute2
-        gcc
-        plymouth
-        parted
-        nnn
-        pcmanfm
-        nautilus
-        
-        alacritty
-        kitty
-        waybar
-        niri
-        brightnessctl
-        wayland-protocols
-        libxkbcommon
-        xwayland-satellite
-        xwayland
-        xbindkeys
-        xdg-utils
-    ];
 
     nix.settings.experimental-features =  ["nix-command" "flakes" ];
 	services.flatpak.enable = true;
