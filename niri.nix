@@ -17,6 +17,5 @@
         pkgs.wl-clipboard 
         pkgs.rofi
         pkgs.fuzzel
-        pkgs.swaync
     ];
 }
