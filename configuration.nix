@@ -24,6 +24,10 @@
 
     programs.niri.enable = true;
     programs.xwayland.enable = true;
+	services.xserver.enable = true;
+	xdg.mime.enable = true;
+  	xdg.menus.enable = true;
+
 
     environment = {
         sessionVariables = {
@@ -84,3 +88,4 @@
 	
     system.stateVersion = "25.05";
 }
+
