@@ -10,6 +10,8 @@
     # import the home manager module
     imports = [
       inputs.noctalia.homeModules.default
+      inputs.niri.homeModules.niri          # ✅ load Niri’s Home Manager module
+  ];
     ];
     home.file.".config/rofi".source = ./config/rofi;
     # configure options
