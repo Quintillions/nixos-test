@@ -12,7 +12,7 @@
         # be deep merged with these attributes.
         bar = {
           density = "compact";
-          position = "right";
+          position = "left";
           showCapsule = false;
           widgets = {
             left = [
