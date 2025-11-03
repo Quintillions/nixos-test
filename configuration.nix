@@ -4,6 +4,7 @@
 
     imports = [
         /etc/nixos/hardware-configuration.nix
+		./fonts.nix #import nix fonts
     ];
 
     # bootloader
@@ -88,4 +89,5 @@
 	
     system.stateVersion = "25.05";
 }
+
 
