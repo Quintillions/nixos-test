@@ -22,6 +22,7 @@
   nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 	system = "x86_64-linux";	 	
       modules = [
+        { _module.args.inputs = inputs; }
         ./configuration.nix
         ./noctalia.nix
         home-manager.nixosModules.home-manager{
