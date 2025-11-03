@@ -6,7 +6,7 @@
       inputs.noctalia.homeModules.default
     ];
     programs.noctalia-shell = {
-      enable = true;
+     enable = true;
       settings = {
         # configure noctalia here; defaults will
         # be deep merged with these attributes.
@@ -50,12 +50,29 @@
             ];
           };
         };
-        colorSchemes.predefinedScheme = "Monochrome";
+        # colorSchemes.predefinedScheme = "Monochrome";
         location = {
           monthBeforeDay = true;
           name = "Marseille, France";
         };
       };
+     colors = {
+            # you must set ALL of these
+            mError = "#dddddd";
+            mOnError = "#111111";
+            mOnPrimary = "#111111";
+            mOnSecondary = "#111111";
+            mOnSurface = "#828282";
+            mOnSurfaceVariant = "#5d5d5d";
+            mOnTertiary = "#111111";
+            mOutline = "#3c3c3c";
+            mPrimary = "#aaaaaa";
+            mSecondary = "#a7a7a7";
+            mShadow = "#000000";
+            mSurface = "#111111";
+            mSurfaceVariant = "#191919";
+            mTertiary = "#cccccc";
+          };
       # this may also be a string or a path to a JSON file,
       # but in this case must include *all* settings.
     };
