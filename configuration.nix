@@ -23,7 +23,6 @@
     # niri
 	programs.fish.enable = true;
 
-    programs.niri.enable = true;
     programs.xwayland.enable = true;
 	services.xserver.enable = true;
 	xdg.mime.enable = true;
