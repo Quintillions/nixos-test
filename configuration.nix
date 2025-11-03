@@ -58,7 +58,7 @@
             pcmanfm
             nautilus
 
-			inputs.noctalia.packages.${system}.default
+
             alacritty
             waybar
             niri
@@ -90,6 +90,7 @@
 	
     system.stateVersion = "25.05";
 }
+
 
 
 
