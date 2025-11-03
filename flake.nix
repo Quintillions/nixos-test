@@ -30,6 +30,7 @@
       modules = [
         ./configuration.nix
         ./noctalia.nix
+        ./niri.nix
 
         # Add Home Manager as a module
         home-manager.nixosModules.home-manager
