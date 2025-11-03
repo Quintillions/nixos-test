@@ -1,6 +1,6 @@
 {pkgs, inputs, ...}:
 {
- environment.systemPackages = with pkgs; [inputs.noctalia.packages.nixos.default];
+ environment.systemPackages = with pkgs; [inputs.noctalia.packages.${system}.default];
  home-manager.users.quin = {
     imports = [
       inputs.noctalia.homeModules.default
