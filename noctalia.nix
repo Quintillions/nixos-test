@@ -11,7 +11,7 @@
     imports = [
       inputs.noctalia.homeModules.default
     ];
-
+    home.file.".config/rofi".source = ./config/rofi;
     # configure options
     programs.noctalia-shell = {
       enable = true;
@@ -34,6 +34,8 @@
       };
       # this may also be a string or a path to a JSON file.
     };
+
+    
                 
   };
 }

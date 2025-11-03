@@ -67,6 +67,13 @@
             xwayland
             xbindkeys
             xdg-utils
+            xwayland-run
+            cage
+            swaybg
+            swaylock
+            wl-clipboard
+            rofi
+            fuzzel
         ];
     };
     
