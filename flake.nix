@@ -6,14 +6,21 @@
         url = "github:nix-community/home-manager";
         inputs.nixpkgs.follows = "nixpkgs";
     };
-    quickshell = {
-      url = "github:outfoxxed/quickshell";
+    dgop = {
+      url = "github:AvengeMedia/dgop";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
+
+    dms-cli = {
+      url = "github:AvengeMedia/danklinux";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.quickshell.follows = "quickshell";  # Use same quickshell version
+    };
+
+    dankMaterialShell = {
+      url = "github:AvengeMedia/DankMaterialShell";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.dgop.follows = "dgop";
+      inputs.dms-cli.follows = "dms-cli";
     };
   };
 
@@ -22,7 +29,6 @@
 	system = "x86_64-linux";	 	
       modules = [
         ./configuration.nix
-		./noctalia.nix
         home-manager.nixosModules.home-manager{
             home-manager = {
                 useGlobalPkgs = true;
@@ -34,6 +40,7 @@
     };
   };
 }
+
 
 
 
