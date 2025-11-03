@@ -3,7 +3,8 @@
   home.packages = [
     pkgs.spotify
     pkgs.vesktop
-    pkgs.steam
+    # pkgs.steam
     
   ];
+
 }
