@@ -4,7 +4,6 @@
     imports = [ 
         ./chatnwhatnot.nix # This imports the chat and whatnot packages
         ./niri.nix # This imports the chat and whatnot packages
-        inputs.dankMaterialShell.homeModules.dankMaterialShell.default
     ];
     
     home.username = "quin";
@@ -21,8 +20,8 @@
         pkgs.playerctl
 
     ];
-    programs.dankMaterialShell.enable = true;
 }
+
 
 
 
