@@ -21,8 +21,8 @@
   outputs = inputs@{ self, nixpkgs, home-manager, ...}: {
   nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 	system = "x86_64-linux";	 	
+  specialArgs = { inherit inputs; };
       modules = [
-        specialArgs = { inherit inputs; };
         ./configuration.nix
         ./noctalia.nix
         home-manager.nixosModules.home-manager{
