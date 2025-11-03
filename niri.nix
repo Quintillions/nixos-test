@@ -6,6 +6,9 @@ let
   ] ++ (pkgs.lib.splitString " " cmd);
 in
 {
+   imports = [
+    inputs.niri.homeModules.niri
+  ];
   programs.niri = {
     enable = true;
     settings = {
