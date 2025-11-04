@@ -24,6 +24,7 @@
 	programs.fish.enable = true;
 
     programs.xwayland.enable = true;
+    xdg.portal.enable = true;
 	services.xserver.enable = true;
 	xdg.mime.enable = true;
   	xdg.menus.enable = true;
