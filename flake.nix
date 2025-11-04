@@ -21,7 +21,7 @@
     };
     
     niri = {
-      url = "github:sodiboo/niri";   # ← Niri's official flake
+      url = "github:sodiboo/niri-flake";   # ← Niri's official flake
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
