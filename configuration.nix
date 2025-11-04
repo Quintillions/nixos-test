@@ -50,6 +50,8 @@
         };
 
         systemPackages = with pkgs; [
+
+            # Utilities
             vim
             wget
             kdePackages.kate
@@ -68,26 +70,29 @@
             plymouth
             parted
             nnn
-            pcmanfm
-            nautilus
-            
+
+
+            # For Niri & Wayland
             alacritty
             waybar
             niri
             brightnessctl
-            wayland-protocols
             libxkbcommon
-            xwayland-satellite
-            xwayland
-            xbindkeys
-            xdg-utils
-            xwayland-run
             cage
             swaybg
             swaylock
             wl-clipboard
             rofi
             fuzzel
+            xdg-desktop-portal
+            xdg-desktop-portal-gtk
+            xdg-desktop-portal-wlr
+            xwayland-satellite
+            xwayland
+            xbindkeys
+            xdg-utils
+            xwayland-run
+            wayland-protocols
         ];
     };
     
