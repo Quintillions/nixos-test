@@ -23,5 +23,4 @@ in
       };
     };
   };
-  xdg.configFile."niri/config.kdl".force = true;
 }
