@@ -45,6 +45,7 @@
     environment = {
         sessionVariables = {
             XDG_SESSION_TYPE = "wayland";
+            WAYLAND_DISPLAY = "wayland-0"; # add this
             XDG_CURRENT_DESKTOP = "niri";
             XDG_SESSION_DESKTOP = "niri";
         };
