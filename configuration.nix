@@ -22,7 +22,13 @@
 
     # niri
 	programs.fish.enable = true;
-
+    xdg.portal = {
+        enable = true;
+        extraPortals = with pkgs; [
+            xdg-desktop-portal-wlr
+            xdg-desktop-portal-gtk
+        ];
+    };
     programs.xwayland.enable = true;
 	services.xserver.enable = true;
 	xdg.mime.enable = true;

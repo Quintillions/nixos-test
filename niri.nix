@@ -6,14 +6,6 @@ let
   ] ++ (pkgs.lib.splitString " " cmd);
 in
 {
-  xdg.portal = {
-  enable = true;
-  extraPortals = with pkgs; [
-    xdg-desktop-portal-wlr
-    xdg-desktop-portal-gtk
-    ];
-  };
-
   programs.niri = {
     enable = true;
     settings = {
