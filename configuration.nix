@@ -18,8 +18,8 @@
     # time zone
     time.timeZone = "Asia/Manila";
 
-    services.getty.autologinUser = "quin";
-
+	programs.fish.enable = true;
+    programs.xwayland.enable = true;
 
     # FOR screen recording
 
@@ -35,10 +35,10 @@
     };
     services.xserver.enable = true;
     # niri
+    services.xserver.displayManager.lightdm.enable = true;
+    services.xserver.displayManager.lightdm.autoLogin.enable = true;
+    services.xserver.displayManager.lightdm.autoLogin.user = "quin";
     services.displayManager.defaultSession = "niri";
-	programs.fish.enable = true;
-    programs.xwayland.enable = true;
-    services.xserver.displayManager.lightdm.enable = false;
 	xdg.mime.enable = true;
 
 
