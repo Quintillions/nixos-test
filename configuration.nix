@@ -38,6 +38,14 @@
     services.xserver.displayManager.lightdm.enable = true;
     services.xserver.displayManager.lightdm.autoLogin.enable = true;
     services.xserver.displayManager.lightdm.autoLogin.user = "quin";
+    environment.etc."xdg/sessions/niri.desktop".text = ''
+        [Desktop Entry]
+        Name=Niri
+        Comment=Wayland compositor Niri
+        Exec=niri
+        Type=Application
+        X-GNOME-Autostart-enabled=true
+    '';    
     services.displayManager.defaultSession = "niri";
 	xdg.mime.enable = true;
 
