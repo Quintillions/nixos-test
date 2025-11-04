@@ -30,7 +30,7 @@
         ];
     };
     programs.xwayland.enable = true;
-	services.xserver.enable = false;
+	services.xserver.enable = true;
     services.xserver.displayManager.lightdm.enable = false;
 	xdg.mime.enable = true;
 
