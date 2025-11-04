@@ -25,13 +25,13 @@
 
     xdg.portal = {
         enable = true;
-
         xdgOpenUsePortal = true;
 
         extraPortals = with pkgs; [
             xdg-desktop-portal-wlr
             xdg-desktop-portal-gtk
         ];
+        configPackages = [ pkgs.xdg-desktop-portal-wlr ];
     };
     services.xserver.enable = true;
     # niri
