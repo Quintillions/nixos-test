@@ -20,16 +20,23 @@
 
     services.getty.autologinUser = "quin";
 
-    # niri
-    services.displayManager.defaultSession = "niri";
-	programs.fish.enable = true;
+
+    # FOR screen recording
+
     xdg.portal = {
         enable = true;
+
+        xdgOpenUsePortal = true;
+        
         extraPortals = with pkgs; [
             xdg-desktop-portal-wlr
             xdg-desktop-portal-gtk
         ];
     };
+    services.xserver.enable = true;
+    # niri
+    services.displayManager.defaultSession = "niri";
+	programs.fish.enable = true;
     programs.xwayland.enable = true;
 	services.xserver.enable = true;
     services.xserver.displayManager.lightdm.enable = false;
