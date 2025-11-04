@@ -1,3 +1,4 @@
+{ lib, pkgs, ... }:
 {
   programs.oh-my-zsh = {
     enable = true;
@@ -26,7 +27,7 @@
         };
       };
 
-
+      
       theme = "catppuccin-macchiato";
     };
 
