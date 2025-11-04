@@ -6,6 +6,8 @@ let
   ] ++ (pkgs.lib.splitString " " cmd);
 in
 {
+  xdg.portal.enable = true;
+  
   programs.niri = {
     enable = true;
     settings = {
