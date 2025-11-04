@@ -114,6 +114,12 @@ in
         "Mod+V".action = toggle-window-floating;
         "Mod+Shift+V".action = switch-focus-between-floating-and-tiling;
         "Mod+W".action = toggle-column-tabbed-display;
+
+          # Session control
+        "Mod+Escape".action = toggle-keyboard-shortcuts-inhibit;
+        "Mod+Shift+E".action = quit;
+        "Ctrl+Alt+Delete".action = quit;
+        "Mod+Shift+P".action = power-off-monitors;
       };
     };
   };
