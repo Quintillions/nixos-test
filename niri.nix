@@ -99,6 +99,21 @@ in
         "Mod+F".action = maximize-column;
         "Mod+Shift+F".action = fullscreen-window;
         "Mod+Ctrl+F".action = expand-column-to-available-width;
+
+          # Centering
+        "Mod+C".action = center-column;
+        "Mod+Ctrl+C".action = center-visible-columns;   
+
+         # Fine-tuning size
+        "Mod+Minus".action = set-column-width "-10%";
+        "Mod+Equal".action = set-column-width "+10%";
+        "Mod+Shift+Minus".action = set-window-height "-10%";
+        "Mod+Shift+Equal".action = set-window-height "+10%";
+
+        # Floating windows
+        "Mod+V".action = toggle-window-floating;
+        "Mod+Shift+V".action = switch-focus-between-floating-and-tiling;
+        "Mod+W".action = toggle-column-tabbed-display;
       };
     };
   };
