@@ -27,7 +27,7 @@
         enable = true;
 
         xdgOpenUsePortal = true;
-        
+
         extraPortals = with pkgs; [
             xdg-desktop-portal-wlr
             xdg-desktop-portal-gtk
@@ -38,7 +38,6 @@
     services.displayManager.defaultSession = "niri";
 	programs.fish.enable = true;
     programs.xwayland.enable = true;
-	services.xserver.enable = true;
     services.xserver.displayManager.lightdm.enable = false;
 	xdg.mime.enable = true;
 
