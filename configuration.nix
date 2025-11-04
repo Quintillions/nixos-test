@@ -86,8 +86,8 @@
             rofi
             fuzzel
             xdg-desktop-portal
+            xdg-desktop-portal-gnome
             xdg-desktop-portal-gtk
-            xdg-desktop-portal-wlr
             xwayland-satellite
             xwayland
             xbindkeys
