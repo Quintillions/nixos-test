@@ -118,15 +118,14 @@ in
           # Session control
         "Mod+Escape".action = toggle-keyboard-shortcuts-inhibit;
         "Mod+Shift+E".action = quit;
-        "Ctrl+Alt+Delete".action = quit;
         "Mod+Shift+P".action = power-off-monitors;
 
         # take a full-screen screenshot to default path
-        "Print".action.screenshot-screen = ["~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png" ];
+        "Print".action.screenshot-screen = ["/home/quin/Pictures/" ];
 
         # take a screenshot of a window or region
-        "Alt+Print".action.screenshot-window = ["~/Pictures/window-screenshot-$(date +%Y%m%d-%H%M%S).png"];
-        "Shift+Print".action.screenshot-region = ["~/Pictures/region-screenshot-$(date +%Y%m%d-%H%M%S).png"];
+        "Alt+Print".action.screenshot-window = "/home/quin/Pictures/"];
+        "Shift+Print".action.screenshot-region = ["/home/quin/Pictures/"];
 
       };
     };
