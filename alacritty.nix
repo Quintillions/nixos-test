@@ -29,7 +29,7 @@
       };
 
       
-      theme = "catppuccin-macchiato";
+      theme = "catppuccin_macchiato";
     };
 
   };
