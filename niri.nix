@@ -141,8 +141,8 @@ in
 
         # Screenshots
         "Print".action = screenshot;
-        "Ctrl+Print".action = screenshot-screen;
-
+        # "Ctrl+Print".action = screenshot-screen;
+        # "Alt+Print".action = screenshot-window;
         # System controls
         "Mod+Escape".action = toggle-keyboard-shortcuts-inhibit;
         "Mod+Shift+E".action = quit;
