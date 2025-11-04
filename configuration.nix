@@ -21,6 +21,7 @@
     services.getty.autologinUser = "quin";
 
     # niri
+    services.displayManager.defaultSession = "niri";
 	programs.fish.enable = true;
     xdg.portal = {
         enable = true;
