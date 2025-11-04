@@ -1,13 +1,15 @@
 { lib, pkgs, ... }:
 {
-  programs.oh-my-zsh = {
-    enable = true;
-    theme = "xiong-chiamiov-plus";
-    plugins = [
-      "git"
-      "zsh-autosuggestions"
-      "zsh-syntax-highlighting"
-    ];
+  programs.zsh = {
+    oh-my-zsh = {
+      enable = true;
+      theme = "xiong-chiamiov-plus";
+      plugins = [
+        "git"
+        "zsh-autosuggestions"
+        "zsh-syntax-highlighting"
+      ];
+    }; 
   };
   programs.alacritty = {
     enable = true;
