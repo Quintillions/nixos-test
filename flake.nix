@@ -24,6 +24,10 @@
       url = "github:sodiboo/niri-flake";   # ← Niri's official flake
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    
+      matugen = {
+        url = "github:/InioX/Matugen";
+    };
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }: {

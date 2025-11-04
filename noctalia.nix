@@ -3,6 +3,7 @@
   # install package
   environment.systemPackages = with pkgs; [
     inputs.noctalia.packages.${system}.default
+    inputs.matugen.packages.${system}.default
     # ... maybe other stuff
   ];
 
