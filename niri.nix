@@ -125,7 +125,6 @@ in
 
         # take a screenshot of a window or region
         "Alt+Print".action.screenshot-window = [];
-        "Shift+Print".action.screenshot-region = [];
 
       };
     };
