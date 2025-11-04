@@ -121,11 +121,11 @@ in
         "Mod+Shift+P".action = power-off-monitors;
 
         # take a full-screen screenshot to default path
-        "Print".action.screenshot-screen = ["/home/quin/Pictures/" ];
+        "Print".action.screenshot-screen = [];
 
         # take a screenshot of a window or region
-        "Alt+Print".action.screenshot-window = ["/home/quin/Pictures/"];
-        "Shift+Print".action.screenshot-region = ["/home/quin/Pictures/"];
+        "Alt+Print".action.screenshot-window = [];
+        "Shift+Print".action.screenshot-region = [];
 
       };
     };
