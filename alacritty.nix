@@ -7,7 +7,7 @@
       "git"
       "zsh-autosuggestions"
       "zsh-syntax-highlighting"
-    ]
+    ];
   };
   programs.alacritty = {
     enable = true;
