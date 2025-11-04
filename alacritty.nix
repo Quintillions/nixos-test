@@ -18,13 +18,18 @@
         opacity = 0.6;
         blur = true;
       };
+
+
       terminal = {
         shell = {
-        program = "${pkgs.zsh}/bin/zsh";
-        args = [ "-l" ]; # "-l" = login shell (optional, but good practice)
+          program = "${pkgs.zsh}/bin/zsh";
+          args = [ "-l" ]; # "-l" = login shell (optional, but good practice)
+        };
       };
-    };
-    theme = "catppuccin-macchiato";
-  };
 
+      
+      theme = "catppuccin-macchiato";
+    };
+
+  };
 }
