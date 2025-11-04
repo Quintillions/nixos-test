@@ -15,7 +15,7 @@ in
         }
       ];
       binds = with config.lib.niri.actions; {
-        "Mod+Ctrl+L".action.spawn = noctalia "lockScreen lock";
+        "Mod+P".action.spawn = noctalia "lockScreen lock";
         "Mod+D".action.spawn = noctalia "launcher toggle";
         "XF86AudioLowerVolume".action.spawn = noctalia "volume decrease";
         "XF86AudioRaiseVolume".action.spawn = noctalia "volume increase";
