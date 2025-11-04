@@ -1,8 +1,8 @@
 { config, lib, pkgs, ... }:
 {
-  home.packages = [
-    pkgs.spotify
-    pkgs.vesktop
+  home.packages = with pkgs; [
+    spotify
+    vesktop
     # pkgs.steam
     
   ];

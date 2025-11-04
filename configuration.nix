@@ -14,7 +14,7 @@
     #host name
     networking.hostName = "nixos";
     networking.networkmanager.enable = true;
-
+    services.getty.autologinUser = "quin";  
     # time zone
     time.timeZone = "Asia/Manila";
 
@@ -39,10 +39,9 @@
 
     # niri
     services.xserver.displayManager.lightdm.enable = false;
-    services.displayManager.defaultSession = "niri";
 	xdg.mime.enable = true;
 
-
+    
     environment = {
         sessionVariables = {
             XDG_SESSION_TYPE = "wayland";
@@ -74,7 +73,6 @@
 
 
             # For Niri & Wayland
-            alacritty
             waybar
             niri
             brightnessctl
