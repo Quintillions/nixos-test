@@ -76,15 +76,21 @@ in
         "Mod+9".action = focus-workspace 9;
 
         
-        "Mod+Ctrl+1".action.move-column-to-workspace = 1;
-        "Mod+Ctrl+2".action.move-column-to-workspace = 2;
-        "Mod+Ctrl+3".action.move-column-to-workspace = 3;
-        "Mod+Ctrl+4".action.move-column-to-workspace = 4;
-        "Mod+Ctrl+5".action.move-column-to-workspace = 5;
-        "Mod+Ctrl+6".action.move-column-to-workspace = 6;
-        "Mod+Ctrl+7".action.move-column-to-workspace = 7;
-        "Mod+Ctrl+8".action.move-column-to-workspace = 8;
-        "Mod+Ctrl+9".action.move-column-to-workspace = 9;
+        "Mod+Shift+1".action.move-column-to-workspace = 1;
+        "Mod+Shift+2".action.move-column-to-workspace = 2;
+        "Mod+Shift+3".action.move-column-to-workspace = 3;
+        "Mod+Shift+4".action.move-column-to-workspace = 4;
+        "Mod+Shift+5".action.move-column-to-workspace = 5;
+        "Mod+Shift+6".action.move-column-to-workspace = 6;
+        "Mod+Shift+7".action.move-column-to-workspace = 7;
+        "Mod+Shift+8".action.move-column-to-workspace = 8;
+        "Mod+Shift+9".action.move-column-to-workspace = 9;
+
+          # Window management
+        "Mod+BracketLeft".action = consume-or-expel-window-left;
+        "Mod+BracketRight".action = consume-or-expel-window-right;
+        "Mod+Comma".action = consume-window-into-column;
+        "Mod+Period".action = expel-window-from-column;
       };
     };
   };
