@@ -4,6 +4,7 @@
     imports = [ 
         ./chatnwhatnot.nix # This imports the chat and whatnot packages
         ./niri.nix
+        ./alacritty.nix
     ];
     
     home.username = "quin";
