@@ -28,9 +28,9 @@
         };
       };
 
-      
-      theme = "catppuccin_macchiato";
+  
     };
+    theme = "catppuccin_macchiato";
 
   };
 }
