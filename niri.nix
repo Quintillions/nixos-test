@@ -124,7 +124,7 @@ in
         "Print".action.screenshot-screen = ["/home/quin/Pictures/" ];
 
         # take a screenshot of a window or region
-        "Alt+Print".action.screenshot-window = "/home/quin/Pictures/"];
+        "Alt+Print".action.screenshot-window = ["/home/quin/Pictures/"];
         "Shift+Print".action.screenshot-region = ["/home/quin/Pictures/"];
 
       };
