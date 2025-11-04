@@ -34,21 +34,11 @@
         configPackages = [ pkgs.xdg-desktop-portal-wlr ];
     };
     services.xserver.enable = true;
-    # niri
-    services.xserver.displayManager.lightdm.enable = true;
-    services.xserver.displayManager.lightdm.autoLogin.enable = true;
-    services.xserver.displayManager.lightdm.autoLogin.user = "quin";
-   environment.etc."xdg/sessions/niri.desktop" = {
-    text = ''
-        [Desktop Entry]
-        Name=Niri
-        Comment=Wayland compositor Niri
-        Exec=niri
-        Type=Application
-    '';
-    mode = "0644";
-    };
 
+
+    
+    # niri
+    services.xserver.displayManager.lightdm.enable = false;
     services.displayManager.defaultSession = "niri";
 	xdg.mime.enable = true;
 
