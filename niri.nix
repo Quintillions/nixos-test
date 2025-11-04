@@ -17,8 +17,8 @@ in
       binds = with config.lib.niri.actions; {
         "Mod+L".action.spawn = noctalia "lockScreen lock";
         "Mod+D".action.spawn = noctalia "launcher toggle";
-        "Mod+E".action.spawn = noctalia "fileManager toggle";
-        "Mod+T".action.spawn = noctalia "terminal toggle";
+        "Mod+E".action.spawn = noctalia "Nautilus";
+        "Mod+T".action.spawn = noctalia "kitty";
         "XF86AudioLowerVolume".action.spawn = noctalia "volume decrease";
         "XF86AudioRaiseVolume".action.spawn = noctalia "volume increase";
         "XF86AudioMute".action.spawn = noctalia "volume muteOutput";
