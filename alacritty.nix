@@ -17,8 +17,7 @@
       window = {
         decorations = "none";
         dynamic_title = true;
-        opacity = 0.6;
-        blur = true;
+        opacity = 1;
       };
 
 
