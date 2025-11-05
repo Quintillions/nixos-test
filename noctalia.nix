@@ -24,7 +24,7 @@
         mSurfaceVariant = "#3a251e";   # medium tone for panels or cards
 
         # 🎨 Brand Tones — distinct and layered
-        mPrimary = "#d8cfc8";          # deep black violet — anchors headers / buttons
+        mPrimary = "#8a5831ff";          # deep black violet — anchors headers / buttons
         mSecondary = "#432C24";        # rich warm bistre — clear contrast to primary
         mTertiary = "#b97a5d";         # warm mid-accent for highlights (light bistre)
 
