@@ -17,23 +17,23 @@
     # configure options
     programs.noctalia-shell = {
       enable = true;
-       colors = {
-        # you must set ALL of these
-        mError = "#ed8796";          
-        mOnError = "#24273a";        
-        mOnPrimary = "#24273a";     
-        mOnSecondary = "#24273a";  
-        mOnSurface = "#cad3f5";    
-        mOnSurfaceVariant = "#b8c0e0";
-        mOnTertiary = "#24273a";   
-        mOutline = "#5b6078";    
-        mPrimary = "#8aadf4";        
-        mSecondary = "#a6da95";      
-        mShadow = "#181926";         
-        mSurface = "#24273a";       
-        mSurfaceVariant = "#1e2030"; 
-        mTertiary = "#f5a97f";      
-      };
+      colors = {
+        # 🎨 Custom “Black–Licorice–Bistre” Palette
+        mError = "#432C24";            # warm reddish-brown accent (Bistre)
+        mOnError = "#150B07";          # dark brown-black (Licorice 2)
+        mOnPrimary = "#2B211A";        # deep bistre brown
+        mOnSecondary = "#281C17";      # muted licorice tone
+        mOnSurface = "#ded1c8";        # light beige text on dark
+        mOnSurfaceVariant = "#bda491"; # softer variant for secondary text
+        mOnTertiary = "#070106";       # deepest black
+        mOutline = "#604337";          # subtle outline brown
+        mPrimary = "#281C17";          # main UI tone (Licorice)
+        mSecondary = "#432C24";        # secondary tone (Bistre)
+        mShadow = "#070106";           # pure black shadow
+        mSurface = "#150B07";          # main background surface
+        mSurfaceVariant = "#2B211A";   # slightly lighter background variant
+        mTertiary = "#bda491";         # accent highlight (from Bistre variant)
+      };  
       settings = {
          bar = {
           position = "left";
