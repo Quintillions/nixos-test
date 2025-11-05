@@ -10,7 +10,16 @@ in
     enable = true;
     settings = {
       prefer-no-csd = true;
-      hotkey-overlay.skip-at-startup = true;
+      
+      layout  = {
+        focus-ring = {
+          enable =  true;
+          width = 2;
+          active.color = "#8aadf4" ;
+          inactive.color = "#494d64" ; 
+
+        };
+      };
 
       spawn-at-startup = [
         {
@@ -31,17 +40,17 @@ in
             bottom-right = 8.0;
           };
         }
+        
+        {
+          app-id = "Alacritty";
+          clip-to-geometry = true;
+          draw-border-with-background = false;
+          geometry-corner-radius = 8.0;
+        }
       ];
 
-      layout  = {
-        focus-ring = {
-          enable =  false;
-          width = 2;
-          active.color = "#8aadf4" ;
-          inactive.color = "#494d64" ; 
 
-        };
-      };
+
 
       binds = with config.lib.niri.actions; {
         "Mod+P".action.spawn = noctalia "lockScreen lock";
