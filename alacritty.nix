@@ -1,6 +1,7 @@
 { lib, pkgs, ... }:
 {
   programs.zsh = {
+    enable = true;
     oh-my-zsh = {
       enable = true;
       theme = "xiong-chiamiov-plus";
@@ -21,6 +22,7 @@
 
       terminal = {
         shell = {
+          program = "${pkgs.zsh}/bin/zsh";
           args = [ "-l" ]; # "-l" = login shell (optional, but good practice)
         };
       };

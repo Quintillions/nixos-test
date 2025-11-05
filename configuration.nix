@@ -17,8 +17,6 @@
     services.getty.autologinUser = "quin";  
     # time zone
     time.timeZone = "Asia/Manila";
-
-	programs.zsh.enable = true;
     programs.xwayland.enable = true;
 
     # FOR screen recording
@@ -96,7 +94,6 @@
     };
     
     users = {
-        defaultUserShell = pkgs.zsh;
         users.quin = {
             isNormalUser = true;
             extraGroups = [ "wheel" ];
