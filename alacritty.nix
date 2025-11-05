@@ -24,6 +24,7 @@
     enable = true;
     settings = {
       window = {
+        padding = x = 8, y = 8;  
         decorations = "none";
         dynamic_title = true;
         opacity = 1;
