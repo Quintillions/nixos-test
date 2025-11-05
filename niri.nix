@@ -43,9 +43,16 @@ in
 
         {
           matches = [ { app-id = "Alacritty"; } ];
+
           clip-to-geometry = true;
+          
           draw-border-with-background = false;
-          geometry-corner-radius = 8.0;
+            geometry-corner-radius = {
+            top-left = 8.0;
+            top-right = 8.0;
+            bottom-left = 8.0;
+            bottom-right = 8.0;
+          };
         }
       ];
 
