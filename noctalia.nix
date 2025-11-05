@@ -19,7 +19,7 @@
       enable = true;
       colors = {
         mShadow = "#050304";           # nearly black — strong shadow depth
-        mSurface = "#241712";          # warm dark brown — main background
+        mSurface = "#c07b60ff";          # warm dark brown — main background
         mSurfaceVariant = "#3a251e";   # medium tone for panels or cards
 
         # 🎨 Brand Tones — distinct and layered
