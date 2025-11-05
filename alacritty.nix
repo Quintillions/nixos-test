@@ -30,7 +30,7 @@
         }; 
         decorations = "none";
         dynamic_title = true;
-        opacity = 1;
+        opacity = 0.5;
       };
 
 
