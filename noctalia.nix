@@ -19,23 +19,22 @@
       enable = true;
       colors = {
         # ⚫ Custom “Black–Licorice–Bistre” Palette (Readable Variant)
-        mError = "#b9725d";            # warm readable error color
-        mOnError = "#070106";          # dark text for error surfaces
+      mError = "#e78284";            # Red
+      mOnError = "#232634";          # Crust (dark)
+      mOnPrimary = "#232634";        # Text on light primary
+      mOnSecondary = "#232634";      # Text on light secondary
+      mOnSurface = "#c6d0f5";        # Text
+      mOnSurfaceVariant = "#a5adce"; # Subtext
+      mOnTertiary = "#232634";       # Text on tertiary
 
-        mOnPrimary = "#ded1c8";        # light text on dark primary
-        mOnSecondary = "#ded1c8";      # light text on dark secondary
-        mOnSurface = "#e2d0ca";        # primary text color
-        mOnSurfaceVariant = "#c6a195"; # secondary text color
-        mOnTertiary = "#e7c4b6";       # soft accent text
+      mOutline = "#737994";          # Outline
+      mPrimary = "#8caaee";          # Blue
+      mSecondary = "#babbf1";        # Lavender
+      mTertiary = "#ef9f76";         # Peach
+      mSurface = "#303446";          # Base
+      mSurfaceVariant = "#292c3c";   # Mantle
+      mShadow = "#232634";           # Crust
 
-        mOutline = "#604337";          # subtle outline / border
-        mPrimary = "#1c232b";          # 🩵 deep cool charcoal (distinguishable)
-        mSecondary = "#432C24";        # 🟤 warm bistre accent
-        mTertiary = "#bda491";         # beige highlight / tertiary accent
-
-        mShadow = "#070106";           # near-black shadow
-        mSurface = "#150B07";          # very dark background
-        mSurfaceVariant = "#2B211A";   # slightly lighter variant
       };  
       settings = {
          bar = {
