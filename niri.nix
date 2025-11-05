@@ -8,8 +8,9 @@ in
 {
   programs.niri = {
     enable = true;
-    hotkey-overlay.skip-at-startup = true;
     settings = {
+      hotkey-overlay.skip-at-startup = true;
+      
       spawn-at-startup = [
         {
           command = [ "noctalia-shell" ];
