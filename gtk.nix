@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     nautilus
+    dconf
   ];
 
   # 🪶 GTK theme
