@@ -18,7 +18,7 @@
     # time zone
     time.timeZone = "Asia/Manila";
 
-	programs.fish.enable = true;
+	programs.zsh.enable = true;
     programs.xwayland.enable = true;
 
     # FOR screen recording
