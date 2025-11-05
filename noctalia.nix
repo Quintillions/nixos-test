@@ -123,7 +123,7 @@
         wallpaper = {
           enabled = true;
           overviewEnabled = true;
-          directory = "";
+          directory = "~/wallpapers/";
           enableMultiMonitorDirectories = false;
           recursiveSearch = false;
           setWallpaperOnAllMonitors = true;
@@ -141,7 +141,7 @@
 
         appLauncher = {
           enableClipboardHistory = false;
-          position = "top";
+          position = "top_center";
           backgroundOpacity = 1;
           pinnedExecs = [ ];
           useApp2Unit = false;
