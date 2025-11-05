@@ -52,7 +52,6 @@
             # Utilities
             vim
             wget
-            kdePackages.kate
             git
             light
             curl

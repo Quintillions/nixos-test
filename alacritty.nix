@@ -1,9 +1,16 @@
 { lib, pkgs, ... }:
 {
+   home.packages = with pkgs; [
+    fastfetch
+    
+  ];
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
+    initContent = lib.mkOrder 1500 "
+      fastfetch
+    ";
     oh-my-zsh = {
       enable = true;
       theme = "xiong-chiamiov-plus";
