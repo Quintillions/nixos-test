@@ -134,7 +134,7 @@
           enableMultiMonitorDirectories = false;
           recursiveSearch = false;
           setWallpaperOnAllMonitors = true;
-          defaultWallpaper = "~/wallpapers/default.jpg";
+          defaultWallpaper = "~/wallpapers/default.png";
           fillMode = "crop";
           fillColor = "#000000";
           randomEnabled = false;
