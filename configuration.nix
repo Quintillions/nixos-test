@@ -95,12 +95,15 @@
         ];
     };
     
-    users.users.quin = {
-        isNormalUser = true;
-        extraGroups = [ "wheel" ];
-        packages = with pkgs; [
-            tree
-        ];
+    users = {
+        defaultUserShell = pkgs.zsh;
+        users.quin = {
+            isNormalUser = true;
+            extraGroups = [ "wheel" ];
+            packages = with pkgs; [
+                tree
+            ];
+        };
     };
 
     programs.firefox.enable = true;
