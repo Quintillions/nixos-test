@@ -164,7 +164,6 @@ in
           # Session control
         "Mod+Escape".action = toggle-keyboard-shortcuts-inhibit;
         "Mod+Shift+E".action = quit;
-        "Mod+Shift+P".action = power-off-monitors;
 
         # take a full-screen screenshot to default path
         "Print".action.screenshot-screen = [];
