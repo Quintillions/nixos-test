@@ -3,10 +3,12 @@
 {
   home.packages = with pkgs; [
     nautilus
-    dconf
+    dconf                     
+    adwaita-icon-theme           
+    papirus-icon-theme            
   ];
 
-  # 🪶 GTK theme
+  # 🪶 GTK THEME
   gtk = {
     enable = true;
     theme = {
@@ -21,10 +23,19 @@
 
   qt = {
     enable = true;
-    platformTheme.name = "gtk"; 
+    platformTheme.name = "gtk";   # Makes Qt apps match GTK theme
     style = {
       name = "Catppuccin-Macchiato-Blue"; 
       package = pkgs.catppuccin-kvantum;
+    };
+  };
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      gtk-theme = "Catppuccin-Macchiato-Standard-Blue-Dark";
+      icon-theme = "Papirus-Dark";
+      color-scheme = "prefer-dark";
+      cursor-theme = "Adwaita"; # optional
     };
   };
 }
