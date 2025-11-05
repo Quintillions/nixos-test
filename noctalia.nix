@@ -18,26 +18,26 @@
     programs.noctalia-shell = {
       enable = true;
       colors = {
-        # ⚫ Custom “Black–Licorice–Bistre” Palette (Readable Variant)
-        # ⚠️ Error + Text (kept from Frappé for clarity)
-        mError = "#e78284";            # Frappé red
-        mOnError = "#232634";          # Crust (dark bg)
-        mOnPrimary = "#ded1c8";        # Light text on dark base
-        mOnSecondary = "#ded1c8";      # Same for secondary
-        mOnSurface = "#c6d0f5";        # Main readable text
-        mOnSurfaceVariant = "#a5adce"; # Subtext
-        mOnTertiary = "#ded1c8";       # Light on accent
+        mShadow = "#050304";           # nearly black — strong shadow depth
+        mSurface = "#241712";          # warm dark brown — main background
+        mSurfaceVariant = "#3a251e";   # medium tone for panels or cards
 
-        # 🧱 Structural tones
-        mOutline = "#604337";          # Warm outline
-        mShadow = "#070106";           # Deep shadow
-        mSurface = "#150B07";          # Very dark background (Licorice 2)
-        mSurfaceVariant = "#2B211A";   # Slightly lighter (Bistre 2)
+        # 🎨 Brand Tones — distinct and layered
+        mPrimary = "#070106";          # deep black violet — anchors headers / buttons
+        mSecondary = "#432C24";        # rich warm bistre — clear contrast to primary
+        mTertiary = "#b97a5d";         # warm mid-accent for highlights (light bistre)
 
-        # 🎨 Customized brand tones
-        mPrimary = "#070106";          # Black — base tone
-        mSecondary = "#281C17";        # Licorice — warm dark contrast
-        mTertiary = "#432C24";         # Bistre — brown-red highlight
+        # 🩶 Text + On-colors (Catppuccin Frappé adapted for readability)
+        mOnPrimary = "#e6d8cf";        # readable light beige text on black
+        mOnSecondary = "#f2e4dc";      # off-white text on brownish tone
+        mOnSurface = "#d8cfc8";        # slightly muted white text for main content
+        mOnSurfaceVariant = "#bbaea6"; # secondary/subdued text
+        mOnTertiary = "#1a0f0a";       # dark text on light tertiary accents
+
+        # ⚠️ Error / Outline
+        mError = "#e78284";            # from Catppuccin Frappé
+        mOnError = "#1f1410";          # dark contrast text on error
+        mOutline = "#7b5548";          # visible warm border / separator
 
       };  
       settings = {
