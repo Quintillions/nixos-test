@@ -24,14 +24,14 @@ in
           clip-to-geometry = true;
 
           geometry-corner-radius = {
-            top-left = 12;
-            top-right = 12;
-            bottom-left = 12;
-            bottom-right = 12;
+            top-left = 8.0;
+            top-right = 8.0;
+            bottom-left = 8.0;
+            bottom-right = 8.0;
           };
         }
       ];
-      
+
       layout  = {
         focus-ring = {
           enable =  true;
