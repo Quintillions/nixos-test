@@ -19,20 +19,23 @@
       enable = true;
       colors = {
         # ⚫ Custom “Black–Licorice–Bistre” Palette (Readable Variant)
-        mError = "#b9725d";            # softened warm error tone
-        mOnError = "#070106";          # near-black text on error
-        mOnPrimary = "#ded1c8";        # bright text on dark primary
-        mOnSecondary = "#ded1c8";      # bright text on dark secondary
-        mOnSurface = "#e2d0ca";        # readable off-white for main text
-        mOnSurfaceVariant = "#c6a195"; # slightly dimmer for secondary text
-        mOnTertiary = "#e7c4b6";       # warm light highlight
-        mOutline = "#604337";          # subtle warm outline
-        mPrimary = "#281C17";          # dark licorice base
-        mSecondary = "#432C24";        # deep bistre accent
-        mShadow = "#070106";           # pure black shadow
-        mSurface = "#150B07";          # main background
-        mSurfaceVariant = "#2B211A";   # slightly lighter background layer
-        mTertiary = "#bda491";         # muted highlight / accent
+        mError = "#b9725d";            # warm readable error color
+        mOnError = "#070106";          # dark text for error surfaces
+
+        mOnPrimary = "#ded1c8";        # light text on dark primary
+        mOnSecondary = "#ded1c8";      # light text on dark secondary
+        mOnSurface = "#e2d0ca";        # primary text color
+        mOnSurfaceVariant = "#c6a195"; # secondary text color
+        mOnTertiary = "#e7c4b6";       # soft accent text
+
+        mOutline = "#604337";          # subtle outline / border
+        mPrimary = "#1c232b";          # 🩵 deep cool charcoal (distinguishable)
+        mSecondary = "#432C24";        # 🟤 warm bistre accent
+        mTertiary = "#bda491";         # beige highlight / tertiary accent
+
+        mShadow = "#070106";           # near-black shadow
+        mSurface = "#150B07";          # very dark background
+        mSurfaceVariant = "#2B211A";   # slightly lighter variant
       };  
       settings = {
          bar = {
