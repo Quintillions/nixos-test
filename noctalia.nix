@@ -123,7 +123,7 @@
         wallpaper = {
           enabled = true;
           overviewEnabled = true;
-          directory = "~/wallpapers/";
+          directory = "~/wallpapers";
           enableMultiMonitorDirectories = false;
           recursiveSearch = false;
           setWallpaperOnAllMonitors = true;
