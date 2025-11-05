@@ -6,8 +6,6 @@
       theme = "xiong-chiamiov-plus";
       plugins = [
         "git"
-        "zsh-autosuggestions"
-        "zsh-syntax-highlighting"
       ];
     }; 
   };
