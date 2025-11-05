@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 {
   home.packages = with pkgs; [
-    spotify
     vesktop
     libreoffice
+    spicetify-cli
     
     # dev
     python3
