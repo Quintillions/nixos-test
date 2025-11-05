@@ -21,7 +21,6 @@
 
       terminal = {
         shell = {
-          program = "${pkgs.zsh}/bin/zsh";
           args = [ "-l" ]; # "-l" = login shell (optional, but good practice)
         };
       };
