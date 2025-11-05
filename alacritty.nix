@@ -12,7 +12,6 @@
     glow
     curl
     bluez
-    unrar
     rar
     gnutar
     
