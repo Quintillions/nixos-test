@@ -61,12 +61,13 @@ in
 
       binds = with config.lib.niri.actions; {
         "Mod+P".action.spawn = noctalia "lockScreen lock";
+        "Mod+Shift+P".action.spawn = noctalia "sessionMenu toggle";
         "Mod+D".action.spawn = noctalia "launcher toggle";
         "XF86AudioLowerVolume".action.spawn = noctalia "volume decrease";
         "XF86AudioRaiseVolume".action.spawn = noctalia "volume increase";
         "XF86AudioMute".action.spawn = noctalia "volume muteOutput";
-        "Mod+E".action.spawn = "nautilus";
-        "Mod+T".action.spawn = "alacritty";
+        "Mod+E".action.spawn = "thunar";
+        "Mod+Enter".action.spawn = "alacritty";
           # Overview and overlay
         "Mod+O".action = toggle-overview;
         "Mod+Shift+Slash".action = show-hotkey-overlay;

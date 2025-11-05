@@ -66,7 +66,7 @@
             gcc
             plymouth
             parted
-            nnn
+            thunar
 
 
             # For Niri & Wayland
