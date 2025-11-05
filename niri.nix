@@ -19,12 +19,19 @@ in
 
       window-rules = [
         {
-          matches = [ { app-id = ".*"; } ]; # Apply to all apps
-          geometry-corner-radius = 12;
+          matches = [ { app-id = ".*"; } ];
+
           clip-to-geometry = true;
+
+          geometry-corner-radius = {
+            top-left = 12;
+            top-right = 12;
+            bottom-left = 12;
+            bottom-right = 12;
+          };
         }
       ];
-
+      
       layout  = {
         focus-ring = {
           enable =  true;
