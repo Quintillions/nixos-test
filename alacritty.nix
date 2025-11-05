@@ -7,6 +7,7 @@
       theme = "xiong-chiamiov-plus";
       plugins = [
         "git"
+        "sudo"
       ];
     }; 
   };
