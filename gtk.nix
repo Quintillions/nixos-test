@@ -20,7 +20,17 @@
       package = pkgs.papirus-icon-theme;
     };
   };
+  xdg.dataFile."icons/Papirus-Dark".source = "${pkgs.papirus-icon-theme}/share/icons/Papirus-Dark";
+  xdg.dataFile."icons/hicolor".source = "${pkgs.adwaita-icon-theme}/share/icons/hicolor";
 
+  xdg.desktopEntries.nautilus = {
+    name = "Files";
+    exec = "nautilus";
+    icon = "org.gnome.Nautilus";
+    categories = [ "GNOME" "System" "FileManager" ];
+    terminal = false;
+  };
+  
   qt = {
     enable = true;
     platformTheme.name = "gtk";   # Makes Qt apps match GTK theme
@@ -32,10 +42,9 @@
 
   dconf.settings = {
     "org/gnome/desktop/interface" = {
-      gtk-theme = "Catppuccin-Macchiato-Standard-Blue-Dark";
       icon-theme = "Papirus-Dark";
+      gtk-theme = "Catppuccin-Macchiato-Standard-Blue-Dark";
       color-scheme = "prefer-dark";
-      cursor-theme = "Adwaita"; # optional
     };
   };
 }
