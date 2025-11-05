@@ -9,7 +9,7 @@ in
   programs.niri = {
     enable = true;
     settings = {
-      prefer-no-csd = true;
+      prefer-no-csd = false;
       hotkey-overlay.skip-at-startup = true;
 
       spawn-at-startup = [
