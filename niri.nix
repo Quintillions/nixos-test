@@ -10,7 +10,7 @@ in
     enable = true;
     settings = {
       hotkey-overlay.skip-at-startup = true;
-      
+
       spawn-at-startup = [
         {
           command = [ "noctalia-shell" ];
@@ -22,13 +22,14 @@ in
         clip-to-geometry = true;
       };
 
+      layout  = {
+        focus-ring = {
+          enable =  true;
+          width = 2;
+          active.color = "#8aadf4" ;
+          inactive.color = "#494d64" ; 
 
-      focus-ring = {
-        enable =  true;
-        width = 2;
-        active.color = "#8aadf4" ;
-        inactive.color = "#494d64" ; 
-
+        };
       };
 
       binds = with config.lib.niri.actions; {
