@@ -36,7 +36,7 @@
       };
       settings = {
          bar = {
-          position = "top";
+          position = "left";
           backgroundOpacity = 1;
           monitors = [ ];
           density = "default";
@@ -235,7 +235,7 @@
           normalUrgencyDuration = 8;
           criticalUrgencyDuration = 15;
         };
-        
+
         battery = {
           chargingMode = 0;
         };
