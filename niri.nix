@@ -17,10 +17,13 @@ in
         }
       ];
 
-      window-rules = {
-        geometry-corner-radius = 12;
-        clip-to-geometry = true;
-      };
+      window-rules = [
+        {
+          matches = [ { app-id = ".*"; } ]; # Apply to all apps
+          geometry-corner-radius = 12;
+          clip-to-geometry = true;
+        }
+      ];
 
       layout  = {
         focus-ring = {
