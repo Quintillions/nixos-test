@@ -1,13 +1,9 @@
 { lib, pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-    # pkgs.steam
-    
-  ];
   programs.zsh = {
     enable = true;
+    autosuggestion.emable = true;
+    syntaxHighlighting.enable = true;
     oh-my-zsh = {
       enable = true;
       theme = "xiong-chiamiov-plus";
