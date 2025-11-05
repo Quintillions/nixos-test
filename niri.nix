@@ -9,7 +9,7 @@ in
   programs.niri = {
     enable = true;
     settings = {
-      prefer-no-csd = false;
+      prefer-no-csd = true;
       hotkey-overlay.skip-at-startup = true;
 
       spawn-at-startup = [
@@ -35,7 +35,7 @@ in
 
       layout  = {
         focus-ring = {
-          enable =  true;
+          enable =  false;
           width = 2;
           active.color = "#8aadf4" ;
           inactive.color = "#494d64" ; 
