@@ -19,21 +19,25 @@
       enable = true;
       colors = {
         # ⚫ Custom “Black–Licorice–Bistre” Palette (Readable Variant)
-      mError = "#e78284";            # Red
-      mOnError = "#232634";          # Crust (dark)
-      mOnPrimary = "#232634";        # Text on light primary
-      mOnSecondary = "#232634";      # Text on light secondary
-      mOnSurface = "#c6d0f5";        # Text
-      mOnSurfaceVariant = "#a5adce"; # Subtext
-      mOnTertiary = "#232634";       # Text on tertiary
+        # ⚠️ Error + Text (kept from Frappé for clarity)
+        mError = "#e78284";            # Frappé red
+        mOnError = "#232634";          # Crust (dark bg)
+        mOnPrimary = "#ded1c8";        # Light text on dark base
+        mOnSecondary = "#ded1c8";      # Same for secondary
+        mOnSurface = "#c6d0f5";        # Main readable text
+        mOnSurfaceVariant = "#a5adce"; # Subtext
+        mOnTertiary = "#ded1c8";       # Light on accent
 
-      mOutline = "#737994";          # Outline
-      mPrimary = "#8caaee";          # Blue
-      mSecondary = "#babbf1";        # Lavender
-      mTertiary = "#ef9f76";         # Peach
-      mSurface = "#303446";          # Base
-      mSurfaceVariant = "#292c3c";   # Mantle
-      mShadow = "#232634";           # Crust
+        # 🧱 Structural tones
+        mOutline = "#604337";          # Warm outline
+        mShadow = "#070106";           # Deep shadow
+        mSurface = "#150B07";          # Very dark background (Licorice 2)
+        mSurfaceVariant = "#2B211A";   # Slightly lighter (Bistre 2)
+
+        # 🎨 Customized brand tones
+        mPrimary = "#070106";          # Black — base tone
+        mSecondary = "#281C17";        # Licorice — warm dark contrast
+        mTertiary = "#432C24";         # Bistre — brown-red highlight
 
       };  
       settings = {
