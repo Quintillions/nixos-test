@@ -8,12 +8,28 @@ in
 {
   programs.niri = {
     enable = true;
+    hotkey-overlay.skip-at-startup = true;
     settings = {
       spawn-at-startup = [
         {
           command = [ "noctalia-shell" ];
         }
       ];
+
+      window-rules = {
+        geometry-corner-radius = 12;
+        clip-to-geometry = true;
+      };
+
+
+      focus-ring = {
+        enable =  true;
+        width = 2;
+        active.color = "#8aadf4" ;
+        inactive.color = "#494d64" ; 
+
+      };
+
       binds = with config.lib.niri.actions; {
         "Mod+P".action.spawn = noctalia "lockScreen lock";
         "Mod+D".action.spawn = noctalia "launcher toggle";
