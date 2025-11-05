@@ -66,6 +66,7 @@
             gcc
             plymouth
             parted
+            power-profiles-daemon
 
 
             # For Niri & Wayland
