@@ -47,4 +47,25 @@
       color-scheme = "prefer-dark";
     };
   };
+
+   home.pointerCursor = {
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Classic";  # You can also try "Bibata-Modern-Ice" or "Bibata-Modern-Amber"
+    size = 24;                       # Adjust 16–48 as preferred
+  };
+
+  gtk.cursorTheme = {
+    name = "Bibata-Modern-Classic";
+    package = pkgs.bibata-cursors;
+  };
+
+  home.sessionVariables = {
+    XCURSOR_THEME = "Bibata-Modern-Classic";
+    XCURSOR_SIZE = "24";
+  };
+
+  xdg.configFile."icons/default/index.theme".text = ''
+    [Icon Theme]
+    Inherits=Bibata-Modern-Classic
+  '';
 }
