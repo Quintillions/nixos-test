@@ -54,14 +54,6 @@
             wget
             git
             light
-            curl
-            zip
-            unzip
-            bluez
-            p7zip
-            unrar
-            rar
-            gnutar
             iproute2
             gcc
             plymouth

@@ -1,7 +1,20 @@
 { lib, pkgs, ... }:
 {
    home.packages = with pkgs; [
+    # cli
     fastfetch
+    yt-dlp
+    ffmpeg-full
+    zip
+    xz
+    unzip
+    p7zip
+    glow
+    curl
+    bluez
+    unrar
+    rar
+    gnutar
     
   ];
   programs.zsh = {

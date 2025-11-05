@@ -4,8 +4,21 @@
     spotify
     vesktop
     libreoffice
-    # pkgs.steam
     
+    # dev
+    python3
+    lua
+    lazygit
+    docker
+
+
+    # system info
+    btop
+    fastfetch
+    nitch
+    gdu
+    gparted
+
   ];
 
 }
