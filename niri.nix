@@ -66,7 +66,7 @@ in
         "XF86AudioLowerVolume".action.spawn = noctalia "volume decrease";
         "XF86AudioRaiseVolume".action.spawn = noctalia "volume increase";
         "XF86AudioMute".action.spawn = noctalia "volume muteOutput";
-        "Mod+E".action.spawn = "thunar";
+        "Mod+E".action.spawn = "nautilus";
         "Mod+Return".action.spawn = "alacritty";
           # Overview and overlay
         "Mod+O".action = toggle-overview;

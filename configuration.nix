@@ -66,7 +66,6 @@
             gcc
             plymouth
             parted
-            xfce.thunar
 
 
             # For Niri & Wayland
