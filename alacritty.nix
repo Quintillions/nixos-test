@@ -1,5 +1,11 @@
 { lib, pkgs, ... }:
 {
+  home.packages = with pkgs; [
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    # pkgs.steam
+    
+  ];
   programs.zsh = {
     enable = true;
     oh-my-zsh = {
@@ -8,6 +14,8 @@
       plugins = [
         "git"
         "sudo"
+        "zsh-autosuggestions"
+        "zsh-syntax-highlighting"
       ];
     }; 
   };
