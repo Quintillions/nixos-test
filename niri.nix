@@ -40,9 +40,9 @@ in
             bottom-right = 8.0;
           };
         }
-        
+
         {
-          app-id = "Alacritty";
+          matches = [ { app-id = "Alacritty"; } ];
           clip-to-geometry = true;
           draw-border-with-background = false;
           geometry-corner-radius = 8.0;
