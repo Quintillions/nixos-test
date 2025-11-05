@@ -18,21 +18,21 @@
     programs.noctalia-shell = {
       enable = true;
       colors = {
-        # 🎨 Custom “Black–Licorice–Bistre” Palette
-        mError = "#432C24";            # warm reddish-brown accent (Bistre)
-        mOnError = "#150B07";          # dark brown-black (Licorice 2)
-        mOnPrimary = "#2B211A";        # deep bistre brown
-        mOnSecondary = "#281C17";      # muted licorice tone
-        mOnSurface = "#ded1c8";        # light beige text on dark
-        mOnSurfaceVariant = "#bda491"; # softer variant for secondary text
-        mOnTertiary = "#070106";       # deepest black
-        mOutline = "#604337";          # subtle outline brown
-        mPrimary = "#281C17";          # main UI tone (Licorice)
-        mSecondary = "#432C24";        # secondary tone (Bistre)
+        # ⚫ Custom “Black–Licorice–Bistre” Palette (Readable Variant)
+        mError = "#b9725d";            # softened warm error tone
+        mOnError = "#070106";          # near-black text on error
+        mOnPrimary = "#ded1c8";        # bright text on dark primary
+        mOnSecondary = "#ded1c8";      # bright text on dark secondary
+        mOnSurface = "#e2d0ca";        # readable off-white for main text
+        mOnSurfaceVariant = "#c6a195"; # slightly dimmer for secondary text
+        mOnTertiary = "#e7c4b6";       # warm light highlight
+        mOutline = "#604337";          # subtle warm outline
+        mPrimary = "#281C17";          # dark licorice base
+        mSecondary = "#432C24";        # deep bistre accent
         mShadow = "#070106";           # pure black shadow
-        mSurface = "#150B07";          # main background surface
-        mSurfaceVariant = "#2B211A";   # slightly lighter background variant
-        mTertiary = "#bda491";         # accent highlight (from Bistre variant)
+        mSurface = "#150B07";          # main background
+        mSurfaceVariant = "#2B211A";   # slightly lighter background layer
+        mTertiary = "#bda491";         # muted highlight / accent
       };  
       settings = {
          bar = {
