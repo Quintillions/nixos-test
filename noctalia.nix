@@ -18,12 +18,13 @@
     programs.noctalia-shell = {
       enable = true;
       colors = {
+
         mShadow = "#050304";           # nearly black — strong shadow depth
-        mSurface = "#c07b60ff";          # warm dark brown — main background
+        mSurface = "#241712";          # warm dark brown — main background
         mSurfaceVariant = "#3a251e";   # medium tone for panels or cards
 
         # 🎨 Brand Tones — distinct and layered
-        mPrimary = "#070106";          # deep black violet — anchors headers / buttons
+        mPrimary = "#d8cfc8";          # deep black violet — anchors headers / buttons
         mSecondary = "#432C24";        # rich warm bistre — clear contrast to primary
         mTertiary = "#b97a5d";         # warm mid-accent for highlights (light bistre)
 
