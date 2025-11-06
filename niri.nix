@@ -13,7 +13,7 @@ in
       
       layout  = {
         insert-hint = false;
-        
+        gapse = 8;
         focus-ring = {
           enable =  true;
           width = 2;
