@@ -12,6 +12,8 @@ in
       prefer-no-csd = true;
       
       layout  = {
+        insert-hint = false;
+        
         focus-ring = {
           enable =  true;
           width = 2;
