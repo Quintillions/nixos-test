@@ -12,7 +12,7 @@ in
       prefer-no-csd = true;
       
       layout  = {
-        insert-hint = false;
+        insert-hint.enable = false;
         
         focus-ring = {
           enable =  true;
