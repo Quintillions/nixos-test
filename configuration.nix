@@ -38,7 +38,8 @@
     # niri
     services.xserver.displayManager.lightdm.enable = false;
 	xdg.mime.enable = true;
-
+	services.upower.enable = lib.mkDefault true;   
+	services.power-profiles-daemon.enable = lib.mkDefault true;  
     
     environment = {
         sessionVariables = {
@@ -116,6 +117,7 @@
 	
     system.stateVersion = "25.05";
 }
+
 
 
 
