@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+    `{ config, lib, pkgs, ... }:
 
 {
 
@@ -62,10 +62,20 @@
 
 
             # For Niri & Wayland
-            waybar
             niri
             brightnessctl
             libxkbcommon
+            glibc
+            libinput
+            libdrm
+            pixman
+            meson
+            ninja
+            libdisplay-info
+            libliftoff
+            hwdata
+            seatd
+            pcre2
             cage
             swaybg
             swaylock
@@ -81,6 +91,8 @@
             xdg-utils
             xwayland-run
             wayland-protocols
+            wayland
+
         ];
     };
     
