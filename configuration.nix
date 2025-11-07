@@ -23,6 +23,7 @@
 
     xdg.portal = {
         enable = true;
+		wlr.enable = true;
         xdgOpenUsePortal = true;
 
         extraPortals = with pkgs; [
@@ -31,15 +32,24 @@
         ];
         configPackages = [ pkgs.xdg-desktop-portal-wlr ];
     };
-    services.xserver.enable = true;
 
 
-
+	services = {
+		xserver.displayManager.lightdm.enable = false;
+		upower.enable = lib.mkDefault true; 
+		power-profiles-daemon.enable = lib.mkDefault true;
+		flatpak.enable = true;
+		xserver.enable = true;
+		pipewire = {
+			enable = true;
+			alsa.enable = true;
+			pulse.enable = true;
+		};
+		
+	};
     # niri
-    services.xserver.displayManager.lightdm.enable = false;
 	xdg.mime.enable = true;
-	services.upower.enable = lib.mkDefault true;   
-	services.power-profiles-daemon.enable = lib.mkDefault true;  
+	security.polkit.enable = true;
     
     environment = {
         sessionVariables = {
@@ -113,10 +123,10 @@
 
 
     nix.settings.experimental-features =  ["nix-command" "flakes" ];
-	services.flatpak.enable = true;
 	
     system.stateVersion = "25.05";
 }
+
 
 
 
