@@ -110,7 +110,7 @@
     users = {
         users.quin = {
             isNormalUser = true;
-            extraGroups = [ "wheel" ];
+            extraGroups = [ "wheel" "audio" "networkmanager" "input" "video" "power" ];
             packages = with pkgs; [
                 tree
             ];

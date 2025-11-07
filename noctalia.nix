@@ -130,11 +130,11 @@
         wallpaper = {
           enabled = true;
           overviewEnabled = true;
-          directory = "~/wallpapers";
+          directory = "/home/quin/wallpapers";
           enableMultiMonitorDirectories = false;
           recursiveSearch = false;
           setWallpaperOnAllMonitors = true;
-          defaultWallpaper = "default.png";
+          defaultWallpaper = "/home/quin/wallpapers/default.png";
           fillMode = "crop";
           fillColor = "#000000";
           randomEnabled = false;
