@@ -1,4 +1,4 @@
-    `{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
 
@@ -116,5 +116,6 @@
 	
     system.stateVersion = "25.05";
 }
+
 
 
