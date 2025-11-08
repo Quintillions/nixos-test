@@ -58,7 +58,7 @@
 			Comment=Wayland Session for Niri
 			Exec=niri
 			Type=Application
-			'';
+		'';
 			
         sessionVariables = {
             XDG_SESSION_TYPE = "wayland";
@@ -135,6 +135,7 @@
 	
     system.stateVersion = "25.05";
 }
+
 
 
 
