@@ -44,7 +44,6 @@
     xserver.displayManager.lightdm.enable = false;
     displayManager.ly = {
 		enable = true;
-		defaultSession = "niri";
 	};
 
     # Power management
@@ -150,3 +149,4 @@
 
   system.stateVersion = "25.05";
 }
+
