@@ -51,15 +51,7 @@
 	security.polkit.enable = true;
 	programs.gpu-screen-recorder.enable = true;
     
-    environment = {
-		etc."wayland-sessions/niri.desktop".text = ''
-			[Desktop Entry]
-			Name=Niri
-			Comment=Wayland Session for Niri
-			Exec=niri
-			Type=Application
-		'';
-			
+    environment = {			
         sessionVariables = {
             XDG_SESSION_TYPE = "wayland";
             XDG_CURRENT_DESKTOP = "niri";
@@ -135,6 +127,7 @@
 	
     system.stateVersion = "25.05";
 }
+
 
 
 
