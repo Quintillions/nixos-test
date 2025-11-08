@@ -11,7 +11,7 @@ in
     settings = {
       prefer-no-csd = true;
       debug = {
-        honor-xdg-activation-with-invalid-serial
+        honor-xdg-activation-with-invalid-serial = true;
       };
       layout  = {
         insert-hint.enable = false;
@@ -180,5 +180,6 @@ in
     };
   };
 }
+
 
 
