@@ -83,7 +83,7 @@
 
 
             # For Niri & Wayland
-			gpu-screen-recorder-gtk
+			gpu-screen-recorder
             niri
             brightnessctl
             libxkbcommon
@@ -137,6 +137,7 @@
 	
     system.stateVersion = "25.05";
 }
+
 
 
 
