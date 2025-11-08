@@ -36,6 +36,7 @@
 
 	services = {
 		xserver.displayManager.lightdm.enable = false;
+		displayManager.ly.enable = true;
 		upower.enable = lib.mkDefault true; 
 		power-profiles-daemon.enable = lib.mkDefault true;
 		flatpak.enable = true;
@@ -126,6 +127,7 @@
 	
     system.stateVersion = "25.05";
 }
+
 
 
 
