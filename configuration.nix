@@ -50,10 +50,6 @@
     # Display manager
 	dbus.enable = true;
     xserver.displayManager.lightdm.enable = false;
-    displayManager.ly = {
-		enable = true;
-	};
-
     # Power management
     upower.enable = lib.mkDefault true;
     power-profiles-daemon.enable = lib.mkDefault true;
@@ -77,17 +73,6 @@
   security.polkit.enable = true;
 
   environment = {
-	etc = {
-      	"niri.desktop".text = ''
-	        [Desktop Entry]
-	        Name=Niri
-	        Comment=Niri Wayland Session
-	        Exec=niri
-	        Type=Application
-	        DesktopNames=Niri
-      	'';
-		"niri.desktop".target = "/usr/share/wayland-sessions/niri.desktop";
-    };
     sessionVariables = {
       XDG_SESSION_TYPE = "wayland";
       XDG_CURRENT_DESKTOP = "niri";
@@ -158,6 +143,7 @@
 
   system.stateVersion = "25.05";
 }
+
 
 
 
