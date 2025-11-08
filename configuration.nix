@@ -24,7 +24,7 @@
   # FOR screen recording and portals
   xdg.portal = {
     enable = true;
-    wlr.enable = true; # Use GTK/GNOME portals instead
+    wlr.enable = false; # Use GTK/GNOME portals instead
     xdgOpenUsePortal = true;
 
     extraPortals = with pkgs; [
@@ -151,6 +151,7 @@
 
   system.stateVersion = "25.05";
 }
+
 
 
 
