@@ -131,6 +131,7 @@
       xwayland-run
       wayland-protocols
       wayland
+	  gnome.gnome-screencast
     ];
   };
 
@@ -150,5 +151,6 @@
 
   system.stateVersion = "25.05";
 }
+
 
 
