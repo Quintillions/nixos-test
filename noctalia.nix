@@ -126,7 +126,7 @@
 
         wallpaper = {
           enabled = true;
-          overviewEnabled = true;
+          overviewEnabled = false;
           directory = "/home/quin/wallpapers";
           enableMultiMonitorDirectories = false;
           recursiveSearch = false;
