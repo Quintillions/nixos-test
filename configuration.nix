@@ -74,6 +74,8 @@ power-profiles-daemon
 
 
 # For Niri & Wayland
+gpu-screen-recorder
+gpu-screen-recorder-gtk
 niri
 brightnessctl
 libxkbcommon
@@ -127,6 +129,7 @@ nix.settings.experimental-features =  ["nix-command" "flakes" ];
 
 system.stateVersion = "25.05";
 }
+
 
 
 
