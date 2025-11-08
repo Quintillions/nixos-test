@@ -51,6 +51,7 @@
     # niri
 	xdg.mime.enable = true;
 	security.polkit.enable = true;
+	programs.gpu-screen-recorder.enable = true;
     
     environment = {
         sessionVariables = {
@@ -74,6 +75,7 @@
 
 
             # For Niri & Wayland
+			gpu-screen-recorder-gtk
             niri
             brightnessctl
             libxkbcommon
@@ -127,6 +129,7 @@
 	
     system.stateVersion = "25.05";
 }
+
 
 
 
