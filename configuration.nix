@@ -22,6 +22,14 @@
   programs.xwayland.enable = true;
 
   # FOR screen recording and portals
+	hardware.opengl = {
+  		enable = true;
+  		extraPackages = with pkgs; [
+    		libva        # Core VA-API library
+    		intel-media-driver  # Intel GPU VA-API driver
+  		];
+	};
+
   xdg.portal = {
     enable = true;
     wlr.enable = false; # Use GTK/GNOME portals instead
@@ -150,6 +158,7 @@
 
   system.stateVersion = "25.05";
 }
+
 
 
 
