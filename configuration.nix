@@ -124,6 +124,7 @@
       xwayland-run
       wayland-protocols
       wayland
+	  arandr
     ];
   };
 
@@ -143,6 +144,7 @@
 
   system.stateVersion = "25.05";
 }
+
 
 
 
