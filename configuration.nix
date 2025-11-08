@@ -58,7 +58,7 @@
 			[Desktop Entry]
 			Name=Niri
 			Comment=Wayland Session for Niri
-			Exec=dbus-run-session niri
+			Exec=niri
 			Type=Application
 			'';
 			
@@ -137,6 +137,7 @@
 	
     system.stateVersion = "25.05";
 }
+
 
 
 
