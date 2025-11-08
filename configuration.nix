@@ -70,14 +70,15 @@
 
   environment = {
 	etc = {
-      "xdg/wayland-sessions/niri.desktop".text = ''
-        [Desktop Entry]
-        Name=Niri
-        Comment=Niri Wayland Session
-        Exec=niri
-        Type=Application
-        DesktopNames=Niri
-      '';
+      	"niri.desktop".text = ''
+	        [Desktop Entry]
+	        Name=Niri
+	        Comment=Niri Wayland Session
+	        Exec=niri
+	        Type=Application
+	        DesktopNames=Niri
+      	'';
+		"niri.desktop".target = "/usr/share/wayland-sessions/niri.desktop";
     };
     sessionVariables = {
       XDG_SESSION_TYPE = "wayland";
@@ -149,4 +150,5 @@
 
   system.stateVersion = "25.05";
 }
+
 
