@@ -27,6 +27,12 @@
   		extraPackages = with pkgs; [
     		libva        # Core VA-API library
     		intel-media-driver  # Intel GPU VA-API driver
+        mesa
+        vulkan-loader
+        vulkan-tools
+        vulkan-validation-layers
+        intel-comput-runtime
+        mesa-vulkan-drivers
   		];
 	};
 
