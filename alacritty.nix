@@ -27,7 +27,6 @@
       enable = true;
       theme = "xiong-chiamiov-plus";
       plugins = [
-        "git"
         "sudo"
       ];
     }; 

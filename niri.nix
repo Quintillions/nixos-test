@@ -10,10 +10,12 @@ in
     enable = true;
     settings = {
       prefer-no-csd = true;
-      
+      debug = {
+        honor-xdg-activation-with-invalid-serial = [];
+      };
       layout  = {
-        insert-hint = false;
-        gapse = 8;
+        insert-hint.enable = false;
+        
         focus-ring = {
           enable =  true;
           width = 2;
@@ -68,6 +70,7 @@ in
         "XF86AudioLowerVolume".action.spawn = noctalia "volume decrease";
         "XF86AudioRaiseVolume".action.spawn = noctalia "volume increase";
         "XF86AudioMute".action.spawn = noctalia "volume muteOutput";
+        "XF86AudioMicMute".action.spawn = noctalia "volume muteInput";
         "Mod+E".action.spawn = "nautilus";
         "Mod+Return".action.spawn = "alacritty";
           # Overview and overlay
@@ -177,3 +180,7 @@ in
     };
   };
 }
+
+
+
+

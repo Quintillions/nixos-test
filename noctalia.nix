@@ -46,7 +46,7 @@
           position = "left";
           backgroundOpacity = 1;
           monitors = [ ];
-          density = "default";
+          density = "mini";
           showCapsule = true;
           floating = false;
           marginVertical = 0.25;
@@ -60,7 +60,7 @@
                 id = "SystemMonitor";
               }
               {
-                id = "ActiveWindow";
+                id = "AudioVisualizer";
               }
               {
                 id = "MediaMini";
@@ -70,6 +70,9 @@
             center = [
               {
                 id = "Workspace";
+              }
+              {
+                id = "Clock";
               }
             ];
 
@@ -88,12 +91,6 @@
               }
               {
                 id = "Volume";
-              }
-              {
-                id = "Brightness";
-              }
-              {
-                id = "Clock";
               }
               {
                 id = "ControlCenter";
@@ -129,12 +126,12 @@
 
         wallpaper = {
           enabled = true;
-          overviewEnabled = true;
-          directory = "~/wallpapers";
+          overviewEnabled = false;
+          directory = "/home/quin/wallpapers";
           enableMultiMonitorDirectories = false;
           recursiveSearch = false;
           setWallpaperOnAllMonitors = true;
-          defaultWallpaper = "~/wallpapers/default.png";
+          defaultWallpaper = "/home/quin/wallpapers/default.png";
           fillMode = "crop";
           fillColor = "#000000";
           randomEnabled = false;
