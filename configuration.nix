@@ -104,8 +104,6 @@
       swaybg
       swaylock
       wl-clipboard
-      fuzzel
-      rofi
       arandr
       xbindkeys
       xdg-utils
@@ -113,6 +111,7 @@
       xwayland-run
       xwayland-satellite
       kdePackages.polkit-kde-agent-1
+      ffmpeg
 
       # ─────────────────────────────
       # 🧩 Wayland / X / Rendering Libraries
