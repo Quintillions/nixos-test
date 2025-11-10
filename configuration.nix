@@ -118,6 +118,8 @@
       kdePackages.polkit-kde-agent-1
       ffmpeg
       mpv
+      chafa
+      fzf
 
       # ─────────────────────────────
       # 🧩 Wayland / X / Rendering Libraries
