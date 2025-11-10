@@ -32,7 +32,6 @@
         vulkan-tools
         vulkan-validation-layers
         intel-compute-runtime
-        mesa-vulkan-drivers
   		];
 	};
 
