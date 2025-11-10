@@ -112,6 +112,7 @@
       xwayland-satellite
       kdePackages.polkit-kde-agent-1
       ffmpeg
+      mpv
 
       # ─────────────────────────────
       # 🧩 Wayland / X / Rendering Libraries
