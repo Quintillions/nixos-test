@@ -80,52 +80,69 @@
     };
 
     systemPackages = with pkgs; [
-      # Utilities
+      # ─────────────────────────────
+      # 🧰 Utilities
+      # ─────────────────────────────
       vim
       wget
       git
       light
+      brightnessctl
       iproute2
+      parted
       gcc
       plymouth
-      parted
       power-profiles-daemon
-
-      # For Niri & Wayland
-      niri
-      gpu-screen-recorder
-      gpu-screen-recorder-gtk
-      brightnessctl
-      libxkbcommon
-      glibc
-      libinput
-      libdrm
-      pixman
-      meson
-      ninja
-      libdisplay-info
-      libliftoff
       hwdata
       seatd
-      pcre2
+
+      # ─────────────────────────────
+      # 🖥️ Graphics & Display Stack
+      # ─────────────────────────────
+      niri
       cage
       swaybg
       swaylock
       wl-clipboard
-      rofi
       fuzzel
+      rofi
+      arandr
+      xbindkeys
+      xdg-utils
+      xwayland
+      xwayland-run
+      xwayland-satellite
+      kdePackages.polkit-kde-agent
+
+      # ─────────────────────────────
+      # 🧩 Wayland / X / Rendering Libraries
+      # ─────────────────────────────
+      wayland
+      wayland-protocols
+      libdrm
+      libinput
+      libxkbcommon
+      libdisplay-info
+      libliftoff
+      pixman
+      glibc
+      meson
+      ninja
+      pcre2
+
+      # ─────────────────────────────
+      # 📸 Screen Recording & Portal Integration
+      # ─────────────────────────────
+      gpu-screen-recorder
+      gpu-screen-recorder-gtk
       xdg-desktop-portal
       xdg-desktop-portal-gtk
       xdg-desktop-portal-gnome
-      xwayland-satellite
-      xwayland
-      xbindkeys
-      xdg-utils
-      xwayland-run
-      wayland-protocols
-      wayland
-	  arandr
-    ];
+
+      # ─────────────────────────────
+      # 🎨 Theming & Configuration
+      # ─────────────────────────────
+      matugen
   };
 
   users = {

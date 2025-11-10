@@ -19,26 +19,26 @@
       enable = true;
       colors = {
 
-        mShadow = "#050304";           # nearly black — strong shadow depth
-        mSurface = "#241712";          # warm dark brown — main background
-        mSurfaceVariant = "#3a251e";   # medium tone for panels or cards
+        # mShadow = "#050304";           # nearly black — strong shadow depth
+        # mSurface = "#241712";          # warm dark brown — main background
+        # mSurfaceVariant = "#3a251e";   # medium tone for panels or cards
 
 
-        mPrimary = "#9b5a34";        # warm medium orange — main brand color
-        mSecondary = "#432C24";        # rich warm bistre — clear contrast to primary
-        mTertiary = "#b97a5d";         # warm mid-accent for highlights (light bistre)
+        # mPrimary = "#9b5a34";        # warm medium orange — main brand color
+        # mSecondary = "#432C24";        # rich warm bistre — clear contrast to primary
+        # mTertiary = "#b97a5d";         # warm mid-accent for highlights (light bistre)
 
-        # 🩶 Text + On-colors (Catppuccin Frappé adapted for readability)
-        mOnPrimary = "#e6d8cf";        # readable light beige text on black
-        mOnSecondary = "#f2e4dc";      # off-white text on brownish tone
-        mOnSurface = "#d8cfc8";        # slightly muted white text for main content
-        mOnSurfaceVariant = "#bbaea6"; # secondary/subdued text
-        mOnTertiary = "#1a0f0a";       # dark text on light tertiary accents
+        # # 🩶 Text + On-colors (Catppuccin Frappé adapted for readability)
+        # mOnPrimary = "#e6d8cf";        # readable light beige text on black
+        # mOnSecondary = "#f2e4dc";      # off-white text on brownish tone
+        # mOnSurface = "#d8cfc8";        # slightly muted white text for main content
+        # mOnSurfaceVariant = "#bbaea6"; # secondary/subdued text
+        # mOnTertiary = "#1a0f0a";       # dark text on light tertiary accents
 
 
-        mError = "#e78284";            # from Catppuccin Frappé
-        mOnError = "#1f1410";          # dark contrast text on error
-        mOutline = "#7b5548";          # visible warm border / separator
+        # mError = "#e78284";            # from Catppuccin Frappé
+        # mOnError = "#1f1410";          # dark contrast text on error
+        # mOutline = "#7b5548";          # visible warm border / separator
 
       };  
       settings = {

@@ -14,6 +14,7 @@ in
         honor-xdg-activation-with-invalid-serial = [];
       };
       layout  = {
+        gaps = 2;
         insert-hint.enable = false;
         
         focus-ring = {
