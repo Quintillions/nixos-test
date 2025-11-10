@@ -112,7 +112,7 @@
       xwayland
       xwayland-run
       xwayland-satellite
-      polkit-kde-agent
+      kdePackages.polkit-kde-agent-1
 
       # ─────────────────────────────
       # 🧩 Wayland / X / Rendering Libraries
