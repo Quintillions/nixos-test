@@ -48,10 +48,10 @@
           monitors = [ ];
           density = "mini";
           showCapsule = true;
-          floating = false;
-          marginVertical = 0.25;
-          marginHorizontal = 0.25;
-          outerCorners = true;
+          floating = true;
+          marginVertical = 0.01;
+          marginHorizontal = 0.01;
+          outerCorners = false;
           exclusive = true;
 
           widgets = {
@@ -77,7 +77,7 @@
             ];
 
             right = [
-              {
+              {matugenSchemeType = "scheme-fruit-salad";
                 id = "ScreenRecorder";
               }
               {
@@ -143,6 +143,11 @@
           panelPosition = "follow_bar";
         };
 
+        colorSchemes = {
+          useWallpaperColors = true;
+          darkMode = true;
+          matugenSchemeType = "tonal-spot";
+        };
         appLauncher = {
           enableClipboardHistory = false;
           position = "top_center";
