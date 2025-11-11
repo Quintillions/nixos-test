@@ -33,6 +33,7 @@
   # FOR screen recording and portals
 	hardware.opengl = {
   		enable = true;
+      enable32Bit = true;
   		extraPackages = with pkgs; [
     		libva        # Core VA-API library
     		intel-media-driver  # Intel GPU VA-API driver
@@ -73,7 +74,7 @@
     flatpak.enable = true;
 
     # X server
-    xserver.enable = true;
+    xserver.enable = true;ea
 
     # Pipewire for audio
     pipewire = {
@@ -97,7 +98,7 @@
       QT_QPA_PLATFORM = "xcb";
       GDK_BACKEND = "x11";
 
-      STEAM_RUNTIME = "1";
+       STEAM_RUNTIME = "1";
       LIBGL_DRIVERS_PATH = "/run/opengl-driver/lib/dri";
       LD_LIBRARY_PATH = "/run/opengl-driver/lib";
       MESA_LOADER_DRIVER_OVERRIDE = "iris"; # For Intel Xe graphics
