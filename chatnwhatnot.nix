@@ -19,6 +19,13 @@
     gdu
     gparted
 
+    # Coding
+    jetbrains.pycharm-community
+    vscode
+    netbeans
+
+
   ];
 
 }
+
