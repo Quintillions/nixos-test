@@ -92,6 +92,10 @@
       XDG_SESSION_TYPE = "wayland";
       XDG_CURRENT_DESKTOP = "niri";
       XDG_SESSION_DESKTOP = "niri";
+
+      SDL_VIDEODRIVER = "x11";
+      QT_QPA_PLATFORM = "xcb";
+      GDK_BACKEND = "x11";
     };
 
     systemPackages = with pkgs; [
