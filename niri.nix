@@ -70,6 +70,8 @@ in
         "Mod+D".action.spawn = noctalia "launcher toggle";
         "XF86AudioLowerVolume".action.spawn = noctalia "volume decrease";
         "XF86AudioRaiseVolume".action.spawn = noctalia "volume increase";
+        "XF86MonBrightnessUp".action.spawn = noctalia "brightness increase";
+        "XF86MonBrightnessDown".action.spawn = noctalia "brightness decrease";
         "XF86AudioMute".action.spawn = noctalia "volume muteOutput";
         "XF86AudioMicMute".action.spawn = noctalia "volume muteInput";
         "Mod+E".action.spawn = "nautilus";
