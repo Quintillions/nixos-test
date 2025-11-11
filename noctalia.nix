@@ -48,10 +48,10 @@
           monitors = [ ];
           density = "mini";
           showCapsule = true;
-          floating = true;
-          marginVertical = 0.01;
-          marginHorizontal = 0.01;
-          outerCorners = false;
+          floating = false;
+          marginVertical = 0.25;
+          marginHorizontal = 0.25;
+          outerCorners = true;
           exclusive = true;
 
           widgets = {
