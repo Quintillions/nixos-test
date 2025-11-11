@@ -146,7 +146,7 @@
         colorSchemes = {
           useWallpaperColors = true;
           darkMode = true;
-          matugenSchemeType = "tonal-spot";
+          matugenSchemeType = "scheme-tonal-spot";
         };
         appLauncher = {
           enableClipboardHistory = false;
