@@ -33,8 +33,7 @@
   # FOR screen recording and portals
 	hardware.opengl = {
   		enable = true;
-      enable32Bit = true;
-  		extraPackages = with pkgs; [
+      extraPackages = with pkgs; [
     		libva        # Core VA-API library
     		intel-media-driver  # Intel GPU VA-API driver
         mesa
