@@ -74,7 +74,7 @@
     flatpak.enable = true;
 
     # X server
-    xserver.enable = true;ea
+    xserver.enable = true;
 
     # Pipewire for audio
     pipewire = {
