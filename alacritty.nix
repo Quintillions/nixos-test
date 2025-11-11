@@ -14,6 +14,7 @@
     bluez
     rar
     gnutar
+    cava
     
   ];
   programs.zsh = {
