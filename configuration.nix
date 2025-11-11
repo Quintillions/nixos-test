@@ -54,7 +54,6 @@
   services = {
     # Display manager
 	dbus.enable = true;
-  gnome.gnome-keyring.enable = true;
     xserver.displayManager.lightdm.enable = false;
     # Power management
     upower.enable = lib.mkDefault true;
