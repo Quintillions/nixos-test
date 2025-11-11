@@ -18,6 +18,13 @@
   # Timezone
   time.timeZone = "Asia/Manila";
 
+  # weekly garbage collection
+    nix.gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 7d";
+    };
+
   # XWayland support
   programs.xwayland.enable = true;
 
