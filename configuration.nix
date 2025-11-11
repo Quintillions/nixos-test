@@ -96,6 +96,11 @@
       SDL_VIDEODRIVER = "x11";
       QT_QPA_PLATFORM = "xcb";
       GDK_BACKEND = "x11";
+
+      STEAM_RUNTIME = "1";
+      LIBGL_DRIVERS_PATH = "/run/opengl-driver/lib/dri";
+      LD_LIBRARY_PATH = "/run/opengl-driver/lib";
+      MESA_LOADER_DRIVER_OVERRIDE = "iris"; # For Intel Xe graphics
     };
 
     systemPackages = with pkgs; [
