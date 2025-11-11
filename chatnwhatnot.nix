@@ -4,8 +4,7 @@
     vesktop
     libreoffice
     spicetify-cli
-    steam
-    
+        
     # dev
     python3
     lua

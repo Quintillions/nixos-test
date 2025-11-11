@@ -28,6 +28,8 @@
   # XWayland support
   programs.xwayland.enable = true;
 
+  programs.steam.enable = true;
+
   # FOR screen recording and portals
 	hardware.opengl = {
   		enable = true;
