@@ -138,6 +138,9 @@
       kdePackages.polkit-kde-agent-1
       ffmpeg
       mpv
+      lib32Mesa
+      lib32VulkanLoader
+      lib32IntelMediaDriver
 
       # ─────────────────────────────
       # 🧩 Wayland / X / Rendering Libraries
