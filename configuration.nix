@@ -22,7 +22,7 @@
   programs.xwayland.enable = true;
 
   # FOR screen recording and portals
-	hardware.opengl = {
+	hardware.graphics = {
   		enable = true;
   		extraPackages = with pkgs; [
     		libva        # Core VA-API library
