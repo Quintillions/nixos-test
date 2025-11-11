@@ -28,12 +28,10 @@
   # XWayland support
   programs.xwayland.enable = true;
 
-  programs.steam.enable = true;
-
   # FOR screen recording and portals
 	hardware.opengl = {
   		enable = true;
-      extraPackages = with pkgs; [
+  		extraPackages = with pkgs; [
     		libva        # Core VA-API library
     		intel-media-driver  # Intel GPU VA-API driver
         mesa
@@ -92,15 +90,6 @@
       XDG_SESSION_TYPE = "wayland";
       XDG_CURRENT_DESKTOP = "niri";
       XDG_SESSION_DESKTOP = "niri";
-
-      SDL_VIDEODRIVER = "x11";
-      QT_QPA_PLATFORM = "xcb";
-      GDK_BACKEND = "x11";
-
-       STEAM_RUNTIME = "1";
-      LIBGL_DRIVERS_PATH = "/run/opengl-driver/lib/dri";
-      LD_LIBRARY_PATH = "/run/opengl-driver/lib";
-      MESA_LOADER_DRIVER_OVERRIDE = "iris"; # For Intel Xe graphics
     };
 
     systemPackages = with pkgs; [
@@ -137,9 +126,6 @@
       kdePackages.polkit-kde-agent-1
       ffmpeg
       mpv
-      lib32Mesa
-      lib32VulkanLoader
-      lib32IntelMediaDriver
 
       # ─────────────────────────────
       # 🧩 Wayland / X / Rendering Libraries
