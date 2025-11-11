@@ -14,7 +14,7 @@ in
         honor-xdg-activation-with-invalid-serial = [];
       };
       layout  = {
-        gaps = 2;
+        gaps = 8;
         insert-hint.enable = false;
         
         focus-ring = {
@@ -39,10 +39,10 @@ in
           clip-to-geometry = true;
 
           geometry-corner-radius = {
-            top-left = 8.0;
-            top-right = 8.0;
-            bottom-left = 8.0;
-            bottom-right = 8.0;
+            top-left = 4.0;
+            top-right = 4.0;
+            bottom-left = 4.0;
+            bottom-right = 4.0;
           };
         }
 
@@ -181,6 +181,7 @@ in
     };
   };
 }
+
 
 
 
