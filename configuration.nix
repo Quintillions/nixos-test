@@ -21,9 +21,13 @@
   # XWayland support
   programs.xwayland.enable = true;
 
+  programs.steam.enable = true;
+
   # FOR screen recording and portals
 	hardware.graphics = {
   		enable = true;
+      driSupport = true;
+      driSupport32Bit = true;
   		extraPackages = with pkgs; [
     		libva        # Core VA-API library
     		intel-media-driver  # Intel GPU VA-API driver
@@ -82,6 +86,12 @@
       XDG_SESSION_TYPE = "wayland";
       XDG_CURRENT_DESKTOP = "niri";
       XDG_SESSION_DESKTOP = "niri";
+      QT_QPA_PLATFORM = "wayland";  
+
+      STEAM_RUNTIME = "1";
+      SDL_VIDEODRIVER = "wayland,x11";
+      MESA_GL_VERSION_OVERRIDE = "4.6";
+
     };
 
     systemPackages = with pkgs; [
