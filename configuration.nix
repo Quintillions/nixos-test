@@ -21,13 +21,18 @@
   # XWayland support
   programs.xwayland.enable = true;
 
-  programs.steam.enable = true;
+  programs.steam = {
+    enable = true;
+    extraPackages = with pkgs; [
+      proton-ge-bin-GE-Proton10
+    ];
+  };  
 
   # FOR screen recording and portals
 	hardware.graphics = {
   		enable = true;
-      driSupport = true;
-      driSupport32Bit = true;
+#      driSupport = true;
+#     driSupport32Bit = true;
   		extraPackages = with pkgs; [
     		libva        # Core VA-API library
     		intel-media-driver  # Intel GPU VA-API driver
