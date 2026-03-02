@@ -24,7 +24,7 @@
   programs.steam = {
     enable = true;
     extraCompatPackages = with pkgs; [
-      proton-ge-bin-GE-Proton10
+      proton-ge-bin
     ];
   };  
 
