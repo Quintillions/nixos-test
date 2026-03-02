@@ -23,7 +23,7 @@
 
   programs.steam = {
     enable = true;
-    extraPackages = with pkgs; [
+    extraCompatPackages = with pkgs; [
       proton-ge-bin-GE-Proton10
     ];
   };  
@@ -62,7 +62,7 @@
 
   services = {
     # Display manager
-	dbus.enable = true;
+	  dbus.enable = true;
     xserver.displayManager.lightdm.enable = false;
     # Power management
     upower.enable = lib.mkDefault true;
