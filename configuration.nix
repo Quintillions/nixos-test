@@ -1,93 +1,192 @@
 { config, lib, pkgs, ... }:
 
 {
+  imports = [
+    /etc/nixos/hardware-configuration.nix
+    ./fonts.nix # Import nix fonts
+  ];
 
-    imports = [
-        /etc/nixos/hardware-configuration.nix
-		./fonts.nix #import nix fonts
+  # Bootloader
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  # Hostname
+  networking.hostName = "nixos";
+  networking.networkmanager.enable = true;
+  services.getty.autologinUser = "quin";
+
+  # Timezone
+  time.timeZone = "Asia/Manila";
+
+  # XWayland support
+  programs.xwayland.enable = true;
+
+  programs.steam = {
+    enable = true;
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
+    ];
+  };  
+
+  # FOR screen recording and portals
+	hardware.graphics = {
+  		enable = true;
+#      driSupport = true;
+#     driSupport32Bit = true;
+  		extraPackages = with pkgs; [
+    		libva        # Core VA-API library
+    		intel-media-driver  # Intel GPU VA-API driver
+        mesa
+        vulkan-loader
+        vulkan-tools
+        vulkan-validation-layers
+        intel-compute-runtime
+  		];
+	};
+
+  xdg.portal = {
+    enable = true;
+    wlr.enable = false; # Use GTK/GNOME portals instead
+    xdgOpenUsePortal = true;
+
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-gnome
     ];
 
-    # bootloader
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.efi.canTouchEfiVariables = true;
+    configPackages = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-gnome
+    ];
+  };
 
-    #host name
-    networking.hostName = "nixos";
-    networking.networkmanager.enable = true;
+  services = {
+    # Display manager
+	  dbus.enable = true;
+    xserver.displayManager.lightdm.enable = false;
+    # Power management
+    upower.enable = lib.mkDefault true;
+    power-profiles-daemon.enable = lib.mkDefault true;
 
-    # time zone
-    time.timeZone = "Asia/Manila";
+    # Flatpak support
+    flatpak.enable = true;
 
-    services.getty.autologinUser = "quin";
+    # X server
+    xserver.enable = true;
 
-    # niri
-	programs.fish.enable = true;
-
-    programs.niri.enable = true;
-    programs.xwayland.enable = true;
-	services.xserver.enable = true;
-	xdg.mime.enable = true;
-  	xdg.menus.enable = true;
-
-
-    environment = {
-        sessionVariables = {
-            XDG_SESSION_TYPE = "wayland";
-            XDG_SESSION_DESKTOP = "niri";
-        };
-
-        systemPackages = with pkgs; [
-            vim
-            wget
-            kdePackages.kate
-            git
-            light
-            curl
-            zip
-            unzip
-            bluez
-            p7zip
-            unrar
-            rar
-            gnutar
-            iproute2
-            gcc
-            plymouth
-            parted
-            nnn
-            pcmanfm
-            nautilus
-            
-            alacritty
-            waybar
-            niri
-            brightnessctl
-            wayland-protocols
-            libxkbcommon
-            xwayland-satellite
-            xwayland
-            xbindkeys
-            xdg-utils
-        ];
+    # Pipewire for audio
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      pulse.enable = true;
     };
-    
-    users.users.quin = {
-        isNormalUser = true;
-        extraGroups = [ "wheel" ];
-        packages = with pkgs; [
-            tree
-        ];
+  };
+
+  # Niri (Wayland desktop)
+  xdg.mime.enable = true;
+  security.polkit.enable = true;
+
+  environment = {
+    sessionVariables = {
+      XDG_SESSION_TYPE = "wayland";
+      XDG_CURRENT_DESKTOP = "niri";
+      XDG_SESSION_DESKTOP = "niri";
+      QT_QPA_PLATFORM = "wayland";  
+
+      STEAM_RUNTIME = "1";
+      SDL_VIDEODRIVER = "wayland,x11";
+      MESA_GL_VERSION_OVERRIDE = "4.6";
+
     };
 
-    programs.firefox.enable = true;
- 
-	nixpkgs.config.allowUnfree = true;
+    systemPackages = with pkgs; [
+      # ─────────────────────────────
+      # 🧰 Utilities
+      # ─────────────────────────────
+      vim
+      wget
+      git
+      light
+      brightnessctl
+      iproute2
+      parted
+      gcc
+      plymouth
+      power-profiles-daemon
+      hwdata
+      seatd
 
+      # ─────────────────────────────
+      # 🖥️ Graphics & Display Stack
+      # ─────────────────────────────
+      niri
+      cage
+      swaybg
+      swaylock
+      wl-clipboard
+      arandr
+      xbindkeys
+      xdg-utils
+      xwayland
+      xwayland-run
+      xwayland-satellite
+      kdePackages.polkit-kde-agent-1
+      ffmpeg
+      mpv
 
-    nix.settings.experimental-features =  ["nix-command" "flakes" ];
-	services.flatpak.enable = true;
-	
-    system.stateVersion = "25.05";
+      # ─────────────────────────────
+      # 🧩 Wayland / X / Rendering Libraries
+      # ─────────────────────────────
+      wayland
+      wayland-protocols
+      libdrm
+      libinput
+      libxkbcommon
+      libdisplay-info
+      libliftoff
+      pixman
+      glibc
+      meson
+      ninja
+      pcre2
+
+      # ─────────────────────────────
+      # 📸 Screen Recording & Portal Integration
+      # ─────────────────────────────
+      gpu-screen-recorder
+      gpu-screen-recorder-gtk
+      xdg-desktop-portal
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-gnome
+
+      # ─────────────────────────────
+      # 🎨 Theming & Configuration
+      # ─────────────────────────────
+      matugen
+    ];
+  };
+
+  users = {
+    users.quin = {
+      isNormalUser = true;
+      extraGroups = [ "wheel" "audio" "networkmanager" "input" "video" "power" ];
+      packages = with pkgs; [ tree ];
+    };
+  };
+
+  programs.firefox.enable = true;
+
+  nixpkgs.config.allowUnfree = true;
+
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+
+  system.stateVersion = "25.05";
 }
+
+
+
+
+
+
 
 
